@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/gem_test
+lib/gem_test.rb
+test/test_gem_test.rb

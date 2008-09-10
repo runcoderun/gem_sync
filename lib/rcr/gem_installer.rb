@@ -2,7 +2,7 @@ require 'ostruct'
 
 module Rcr
   class GemInstaller
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
     GITHUB = "http://gems.github.com"
     GEM_LIST = ENV["GEM_LIST"] || ARGV[0] || File.join(File.dirname(__FILE__), *%w[gems.txt])
   

@@ -1,8 +1,9 @@
-bin/gem_test
+bin/rcr_gem_installer
 History.txt
-lib/gem_test.rb
+lib/rcr/gem_installer.rb
+lib/runcoderun_gems.txt
+Manifest
 Manifest.txt
 Rakefile
 README.txt
-test/test_gem_test.rb
-Manifest
+spec/gem_installer_spec.rb

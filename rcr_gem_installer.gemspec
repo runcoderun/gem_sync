@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = %q{rcr_gem_installer}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new("= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rob Sanheim @ Relevance"]
-  s.date = %q{2008-09-09}
+  s.date = %q{2008-09-10}
   s.default_executable = %q{rcr_gem_installer}
   s.description = %q{Tool to install dependancies for RunCodeRun, though it coudl be used to bootstrap your own machines as well.}
   s.email = %q{rob@runcoderun.com}

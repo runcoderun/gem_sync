@@ -30,11 +30,11 @@ module Rcr
     def self.convert_gem_list(string)
       gems = []
       string.each do |line|
-        result = line.match(/([\w\-_]*) \((.*)\)/)
-        next unless result && result[1]
-        versions = result[2] ? result[2].split(",") : ""
+        name = parse_name(line)
+        next unless name
+        versions = parse_versions(line)
         versions.each do |version|
-          gems << OpenStruct.new(:name => result[1], :version => version.strip)
+          gems << OpenStruct.new(:name => name, :version => version.strip)
         end
       end
       gems

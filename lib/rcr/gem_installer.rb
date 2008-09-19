@@ -39,6 +39,14 @@ module Rcr
       end
       gems
     end
+    
+    def self.parse_name(string)
+      string.match(/[\w\-_]*/)[0]
+    end
+    
+    def self.parse_versions(string)
+      string.scan(/([\d\.]+)/).flatten
+    end
   
     def self.gem_installed?(name, version)
       installed_gems.detect {|gem| gem.name == name && gem.version == version}

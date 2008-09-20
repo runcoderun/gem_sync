@@ -1,14 +1,13 @@
 require 'ostruct'
 
 module Rcr
-  class GemInstaller
+  class GemSync
     VERSION = '0.1.4'
     GITHUB = "http://gems.github.com"
     RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
-    GEM_LIST = ENV["GEM_LIST"] || ARGV[0] || RCR_GEM_LIST
   
     def self.install_gems
-      gem_list = File.read(GEM_LIST)
+      gem_list = File.read(RCR_GEM_LIST)
       convert_gem_list(gem_list).each do |gem|
         if gem_installed?(gem.name, gem.version)
           puts "skipping #{gem.name} #{gem.version}"

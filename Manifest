@@ -1,9 +1,9 @@
-bin/rcr_gem_installer
+bin/rcr_gem_sync
 History.txt
-lib/rcr/gem_installer.rb
+lib/rcr/gem_sync.rb
 lib/runcoderun_gems.txt
 Manifest
 Manifest.txt
 Rakefile
 README.txt
-spec/gem_installer_spec.rb
+spec/gem_sync_spec.rb

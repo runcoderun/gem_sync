@@ -1,6 +1,4 @@
-=== 1.0.0 / 2008-09-05
+=== 0.2.0 / 2008-09-05
 
-* 1 major enhancement
-
-  * Birthday!
-
+* added bin
+* renamed

@@ -4,23 +4,11 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
-
-== REQUIREMENTS:
-
-* FIX (list of requirements)
+Sync gems between machines, using the text output gem --list gives you.  Simple.
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+sudo gem install runcoderun-gem_sync --source http://gems.github.com
 
 == LICENSE:
 

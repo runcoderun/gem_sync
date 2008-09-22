@@ -1,4 +1,5 @@
-bin/rcr_gem_sync
+bin/gem_sync
+gem_sync.gemspec
 History.txt
 lib/rcr/gem_sync.rb
 lib/runcoderun_gems.txt

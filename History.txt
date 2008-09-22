@@ -1,3 +1,6 @@
+=== 0.2.5
+* rename to GemSync...github adds the name spacing anyways
+
 === 0.2.0 / 2008-09-05
 
 * added bin

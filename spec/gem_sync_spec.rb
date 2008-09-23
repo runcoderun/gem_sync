@@ -41,6 +41,10 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
       versions[0].should == "1.0.10"
       versions[1].should == "1.0.11"
     end
+    
+    it "parses gems with numbers in the name" do
+      Rcr::GemSync.parse_versions("open4 (0.9.6)")[0].should == "0.9.6"
+    end
   end
   
   describe "parsing gem names" do

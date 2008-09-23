@@ -2,7 +2,7 @@ require 'ostruct'
 
 module Rcr
   class GemSync
-    VERSION = '0.2.5'
+    VERSION = '0.2.6'
     GITHUB = "http://gems.github.com"
     RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
   
@@ -44,7 +44,10 @@ module Rcr
     end
     
     def self.parse_versions(string)
-      string.scan(/([\d\.]+)/).flatten
+      output = string.scan(/\((.*?)\)/).flatten
+      output = output.map {|s| s.split(",") }.flatten
+      output = output.map {|s| s.strip }
+      output
     end
   
     def self.gem_installed?(name, version)

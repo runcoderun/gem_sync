@@ -3,7 +3,7 @@ require 'test/spec'
 require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
 
 describe 'GemSync' do
-
+  
   describe "parsing a gem list" do
     it "parses gem list" do
       list = %[wirble (0.1.2)
@@ -63,6 +63,15 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
 
     it "parses name with underscores" do
       Rcr::GemSync.parse_name("spec_converter_foo (1.0.10)").should == "spec_converter_foo"
+    end
+  end
+  
+  describe "failed installation" do
+    xit "should skip the gem and move on if failed due to permission denied" do
+      out = "Permission denied - /opt/local/lib/ruby/gems/1.8/cache/activesupport-1.4.4.gem"
+    end
+    
+    xit "should try to install from github if gem was not found in default source(s)" do
     end
   end
   

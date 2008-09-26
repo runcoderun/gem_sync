@@ -2,15 +2,24 @@ require 'ostruct'
 
 module Rcr
   class GemSync
-    VERSION = '0.2.5'
+    VERSION = '0.2.8'
     GITHUB = "http://gems.github.com"
     RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
   
     def self.install_gems
+      install_gems_from_txt
+      update_gems
+    end
+    
+    def self.update_gems
+      puts `gem update`
+    end
+    
+    def self.install_gems_from_txt
       gem_list = File.read(RCR_GEM_LIST)
       convert_gem_list(gem_list).each do |gem|
         if gem_installed?(gem.name, gem.version)
-          puts "skipping #{gem.name} #{gem.version}"
+          puts "skipping #{gem.name} #{gem.version} - already installed..."
           next
         end
         cmd = "gem install #{gem.name} --no-ri --no-rdoc"
@@ -44,7 +53,10 @@ module Rcr
     end
     
     def self.parse_versions(string)
-      string.scan(/([\d\.]+)/).flatten
+      output = string.scan(/\((.*?)\)/).flatten
+      output = output.map {|s| s.split(",") }.flatten
+      output = output.map {|s| s.strip }
+      output
     end
   
     def self.gem_installed?(name, version)

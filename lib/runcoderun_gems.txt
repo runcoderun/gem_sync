@@ -9,6 +9,7 @@ bj (1.0.1)
 builder (2.1.2)
 camping (1.5)
 color (1.4.0)
+configatron  
 dancroak-clearance (0.1.3)
 dancroak-clearance-admin (0.0.1)
 dancroak-ruby-summize (0.4)
@@ -24,6 +25,7 @@ fastercsv (1.2.3)
 fattr (1.0.3)
 flexmock (0.8.2)
 flog (1.1.0)
+money
 git (1.0.5)
 god (0.7.8)
 haml (2.0.2, 2.0.1)
@@ -69,6 +71,7 @@ relevance-rubycas-server (0.6.99)
 relevance-tarantula (0.0.5)
 relevance-github_hook (0.5.8)
 right_aws
+ruby-hmac
 rmagick (2.5.2)
 rspec (1.1.4)
 ruby-debug (0.10.2)

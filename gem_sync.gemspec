@@ -25,7 +25,7 @@ dependencies:
       - !ruby/object:Gem::Version 
         version: "0"
     version: 
-description: Tool to install dependancies for RunCodeRun, though it could be used to bootstrap your own machines as well.
+description: Tool to install dependenciescies for RunCodeRun, though it could be used to bootstrap your own machines as well.
 email: rob@runcoderun.com
 executables: 
 - gem_sync
@@ -76,6 +76,6 @@ requirements: []
 rubyforge_project: gem_sync
 rubygems_version: 1.2.0
 specification_version: 2
-summary: Tool to install dependancies for RunCodeRun, though it could be used to bootstrap your own machines as well.
+summary: Tool to install dependenciescies for RunCodeRun, though it could be used to bootstrap your own machines as well.
 test_files: 
 - spec/gem_sync_spec.rb

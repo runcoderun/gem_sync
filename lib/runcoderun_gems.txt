@@ -68,6 +68,7 @@ relevance-multi_rails (0.0.7)
 relevance-rubycas-server (0.6.99)
 relevance-tarantula (0.0.5)
 relevance-github_hook (0.5.8)
+right_aws
 rmagick (2.5.2)
 rspec (1.1.4)
 ruby-debug (0.10.2)

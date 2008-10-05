@@ -2,7 +2,7 @@ require 'ostruct'
 
 module Rcr
   class GemSync
-    VERSION = '0.3.6'
+    VERSION = '0.4.0'
     GITHUB = "http://gems.github.com"
     RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
   
@@ -17,6 +17,7 @@ module Rcr
     end
     
     def self.update_gems
+      puts "Updating all gems to latest..."
       puts `gem update`
     end
     

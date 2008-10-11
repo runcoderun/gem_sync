@@ -2,7 +2,7 @@ require 'ostruct'
 
 module Rcr
   class GemSync
-    VERSION = '0.4.0'
+    VERSION = '0.4.1'
     GITHUB = "http://gems.github.com"
     RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
   

@@ -1,8 +1,27 @@
 require 'test/spec'
-
+require 'mocha'
 require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
 
 describe 'GemSync' do
+
+  describe "reading file" do
+    before do
+      Rcr::GemSync.stubs :update_self
+      Rcr::GemSync.stubs :install_gems_from_list
+      Rcr::GemSync.stubs :update_gems
+    end
+      
+    it "allows overriding gem list file" do
+      File.expects(:read).with("/my/gems.txt")
+      Rcr::GemSync.install_gems "/my/gems.txt"
+    end
+    
+    it "reads file for gem list" do
+      File.expects(:read).with("/my/gems.txt")
+      Rcr::GemSync.read_gem_list "/my/gems.txt"
+    end
+
+  end
   
   describe "parsing a gem list" do
     it "parses gem list" do

@@ -4,11 +4,12 @@ module Rcr
   class GemSync
     VERSION = '0.4.2'
     GITHUB = "http://gems.github.com"
-    RCR_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
-  
-    def self.install_gems
+    RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
+
+    def self.install_gems(gem_list = RCR_DEFAULT_GEM_LIST)
       update_self
-      install_gems_from_txt
+      read_gem_list(gem_list)
+      install_gems_from_list
       update_gems
     end
     
@@ -16,14 +17,18 @@ module Rcr
       puts `gem update runcoderun-gem_sync --source #{GITHUB}`
     end
     
+    def self.read_gem_list(gem_list)
+      puts "Running gem_sync with list: #{gem_list}."
+      @@gem_list = File.read(gem_list)
+    end
+    
     def self.update_gems
       puts "Updating all gems to latest..."
       puts `gem update`
     end
     
-    def self.install_gems_from_txt
-      gem_list = File.read(RCR_GEM_LIST)
-      convert_gem_list(gem_list).each do |gem|
+    def self.install_gems_from_list
+      convert_gem_list(@@gem_list).each do |gem|
         if gem_installed?(gem.name, gem.version)
           puts "skipping #{gem.name} #{gem.version} - already installed..."
           next

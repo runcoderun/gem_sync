@@ -12,13 +12,18 @@ describe 'GemSync' do
     end
       
     it "allows overriding gem list file" do
-      File.expects(:read).with("/my/gems.txt")
+      Rcr::GemSync.expects(:open).with("/my/gems.txt").returns(StringIO.new)
       Rcr::GemSync.install_gems "/my/gems.txt"
     end
     
     it "reads file for gem list" do
-      File.expects(:read).with("/my/gems.txt")
+      Rcr::GemSync.expects(:open).with("/my/gems.txt").returns(StringIO.new)
       Rcr::GemSync.read_gem_list "/my/gems.txt"
+    end
+    
+    it "reads from gem list on github if passed symbol :github_list" do
+      Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_GITHUB_GEM_LIST).returns(StringIO.new)
+      Rcr::GemSync.install_gems "__gem_sync__"
     end
 
   end

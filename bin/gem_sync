@@ -2,4 +2,4 @@
 require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
 
 gem_list = (ARGV[0] || nil)
-Rcr::GemSync.install_gems
+Rcr::GemSync.install_gems gem_list

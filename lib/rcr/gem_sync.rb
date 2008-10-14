@@ -1,10 +1,12 @@
 require 'ostruct'
+require 'open-uri'
 
 module Rcr
   class GemSync
-    VERSION = '0.4.2'
+    VERSION = '0.4.5'
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
+    RCR_GITHUB_GEM_LIST = "http://github.com/runcoderun/gem_sync/tree/master%2Flib%2Fruncoderun_gems.txt?raw=true"
 
     def self.install_gems(gem_list = RCR_DEFAULT_GEM_LIST)
       update_self
@@ -18,8 +20,9 @@ module Rcr
     end
     
     def self.read_gem_list(gem_list)
-      puts "Running gem_sync with list: #{gem_list}."
-      @@gem_list = File.read(gem_list)
+      list = gem_list == "__from_github__" ? RCR_GITHUB_GEM_LIST : gem_list
+      puts "Running gem_sync with list: #{list}."
+      @@gem_list = open(list).read
     end
     
     def self.update_gems

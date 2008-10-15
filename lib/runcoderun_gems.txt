@@ -47,6 +47,7 @@ libxml-ruby (0.8.3)
 log_buddy (0.0.5)
 main (2.8.2)
 markaby (0.5)
+memcached
 merb-core (0.9.9)
 merb-exceptions (0.9.9)
 merb-freezer (0.9.5)

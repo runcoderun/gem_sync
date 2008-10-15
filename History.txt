@@ -1,5 +1,6 @@
 === 0.4.6
 * Bug fixes
+
 === 0.4.5 
 * Allow reading gem list directly from a source on the web, using openuri
 * Allow reading from the gem list on github directly with an arg of __from_github__ to #install_gems - this means I no longer have to push gem updates to grab new gems
@@ -8,6 +9,5 @@
 * rename to GemSync...github adds the name spacing anyways
 
 === 0.2.0 / 2008-09-05
-
 * added bin
 * renamed

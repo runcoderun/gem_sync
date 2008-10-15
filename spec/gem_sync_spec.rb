@@ -4,26 +4,38 @@ require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
 
 describe 'GemSync' do
 
+  describe "calling gem_sync" do
+  end
+  
   describe "reading file" do
     before do
       Rcr::GemSync.stubs :update_self
       Rcr::GemSync.stubs :install_gems_from_list
       Rcr::GemSync.stubs :update_gems
     end
+
+    it "uses default gem list for nil gem list" do
+      Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_DEFAULT_GEM_LIST).returns(StringIO.new)
+      Rcr::GemSync.install_gems
+      Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_DEFAULT_GEM_LIST).returns(StringIO.new)
+      Rcr::GemSync.install_gems nil
+    end
       
     it "allows overriding gem list file" do
+      Rcr::GemSync.stubs(:fail_if_gem_list_doesnt_exist).returns(true)
       Rcr::GemSync.expects(:open).with("/my/gems.txt").returns(StringIO.new)
       Rcr::GemSync.install_gems "/my/gems.txt"
     end
     
     it "reads file for gem list" do
+      Rcr::GemSync.stubs(:fail_if_gem_list_doesnt_exist).returns(true)
       Rcr::GemSync.expects(:open).with("/my/gems.txt").returns(StringIO.new)
       Rcr::GemSync.read_gem_list "/my/gems.txt"
     end
     
-    it "reads from gem list on github if passed symbol :github_list" do
+    it "reads from gem list on github if passed github param" do
       Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_GITHUB_GEM_LIST).returns(StringIO.new)
-      Rcr::GemSync.install_gems "__gem_sync__"
+      Rcr::GemSync.install_gems "__from_github__"
     end
 
   end

@@ -8,11 +8,20 @@ module Rcr
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
     RCR_GITHUB_GEM_LIST = "http://github.com/runcoderun/gem_sync/tree/master%2Flib%2Fruncoderun_gems.txt?raw=true"
 
-    def self.install_gems(gem_list = RCR_DEFAULT_GEM_LIST)
+    def self.install_gems(gem_list = nil)
+      gem_list = RCR_DEFAULT_GEM_LIST unless gem_list
+      puts "gem_list: #{gem_list.inspect}"
       update_self
       read_gem_list(gem_list)
       install_gems_from_list
       update_gems
+    end
+    
+    def self.fail_if_gem_list_doesnt_exist(gem_list)
+      raise("gem_list should not be nil") unless gem_list
+      unless gem_list[0..3] == "http"
+        raise("file for gem_list #{gem_list} not found!") unless File.exists?(gem_list) 
+      end
     end
     
     def self.update_self
@@ -21,6 +30,7 @@ module Rcr
     
     def self.read_gem_list(gem_list)
       list = gem_list == "__from_github__" ? RCR_GITHUB_GEM_LIST : gem_list
+      fail_if_gem_list_doesnt_exist(list)
       puts "Running gem_sync with list: #{list}."
       @@gem_list = open(list).read
     end

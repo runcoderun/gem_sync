@@ -107,6 +107,8 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
       out = "Permission denied - /opt/local/lib/ruby/gems/1.8/cache/activesupport-1.4.4.gem"
     end
     
+    xit "logs connection refused and skips gem, usually due to firewall blocking or gem mirrir is down"
+    
     xit "should try to install from github if gem was not found in default source(s)" do
     end
   end

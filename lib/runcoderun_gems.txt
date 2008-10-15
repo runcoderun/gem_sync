@@ -10,7 +10,7 @@ bj (1.0.1)
 builder (2.1.2)
 camping (1.5)
 color (1.4.0)
-configatron  
+configatron (2.1.5)
 dancroak-clearance (0.1.3)
 dancroak-clearance-admin (0.0.1)
 dancroak-ruby-summize (0.4)

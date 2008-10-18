@@ -9,6 +9,8 @@ beanstalk-client (1.0.2)
 bj (1.0.1)
 builder (2.1.2)
 camping (1.5)
+capistrano
+capistrano-ext
 color (1.4.0)
 configatron (2.1.5)
 dancroak-clearance (0.1.3)
@@ -23,6 +25,7 @@ dnsruby (1.2)
 do_mysql
 do_sqlite3 (0.9.5)
 echoe (3)
+eventmachine
 expectations (1.2.0)
 extlib (0.9.5)
 facets (2.4.4, 2.4.1, 2.3.0, 2.2.1, 2.2.0, 2.1.3, 2.0.5)
@@ -49,6 +52,7 @@ log_buddy (0.0.5)
 main (2.8.2)
 markaby (0.5)
 memcached
+memcache-client
 merb-core (0.9.9)
 merb-exceptions (0.9.9)
 merb-freezer (0.9.5)
@@ -90,6 +94,7 @@ relevance-tarantula (0.0.5)
 relevance-github_hook (0.5.8)
 right_aws (1.8.1)
 ruby-hmac (0.3.2)
+ruby-openid
 rmagick (2.5.2)
 rspec (1.1.4)
 ruby-aaws
@@ -104,6 +109,7 @@ Shoulda (1.1.1)
 spicycode-rcov (0.8.1.3.0)
 sql-parser (0.0.2)
 sqlite3-ruby (1.2.1)
+starling-starling
 syntax
 systemu (1.2.0)
 technicalpickles-echoe (3)

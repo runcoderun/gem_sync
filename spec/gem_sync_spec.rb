@@ -41,6 +41,13 @@ describe 'GemSync' do
   end
   
   describe "parsing a gem list" do
+    it "parses gems without a version" do
+            list = %[wirble]
+            gems = Rcr::GemSync.convert_gem_list(list)
+            gems[0].name.should == "wirble"
+            gems[0].version.should == nil
+    end
+    
     it "parses gem list" do
       list = %[wirble (0.1.2)
 xml-simple (1.0.11)
@@ -57,6 +64,11 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
   end
   
   describe "parsing versions" do
+    it "parses without a version" do
+      versions = Rcr::GemSync.parse_versions("foo")
+      versions[0].should == nil
+    end
+    
     it "parses single version" do
       versions = Rcr::GemSync.parse_versions("foo (1.0.10)")
       versions[0].should == "1.0.10"

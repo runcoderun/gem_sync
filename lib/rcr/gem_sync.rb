@@ -65,8 +65,12 @@ module Rcr
         name = parse_name(line)
         next unless name
         versions = parse_versions(line)
-        versions.each do |version|
-          gems << OpenStruct.new(:name => name, :version => version.strip)
+        if versions.empty?
+          gems << OpenStruct.new(:name => name)
+        else 
+          versions.each do |version|
+            gems << OpenStruct.new(:name => name, :version => version.strip)
+          end
         end
       end
       gems
@@ -79,7 +83,7 @@ module Rcr
     def self.parse_versions(string)
       output = string.scan(/\((.*?)\)/).flatten
       output = output.map {|s| s.split(",") }.flatten
-      output = output.map {|s| s.strip }
+      output = output.map {|s| s.strip}
       output
     end
   

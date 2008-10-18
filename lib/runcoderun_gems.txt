@@ -10,6 +10,7 @@ bj (1.0.1)
 builder (2.1.2)
 camping (1.5)
 capistrano
+capistrano-ext
 color (1.4.0)
 configatron (2.1.5)
 dancroak-clearance (0.1.3)

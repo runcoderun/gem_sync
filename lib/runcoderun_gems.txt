@@ -35,6 +35,7 @@ fattr (1.0.3)
 flexmock (0.8.2)
 flog (1.1.0)
 money
+geminstaller
 git (1.0.5)
 god (0.7.8)
 haml (2.0.2, 2.0.1)
@@ -125,6 +126,7 @@ tidy (1.1.2)
 tinder (1.1.7)
 transaction-simple (1.4.0)
 treetop (1.2.4)
+twitter
 uuidtools (1.0.3)
 validatable (1.6.7)
 will_paginate (2.2.2)

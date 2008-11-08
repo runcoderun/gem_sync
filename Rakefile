@@ -1,4 +1,4 @@
-gem 'technicalpickles-echoe'
+gem 'echoe'
 require 'rubygems'
 require 'echoe'
 require './lib/rcr/gem_sync.rb'

@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gem_sync}
-  s.version = "0.5"
+  s.version = "0.5.1"
 
-  s.required_rubygems_version = Gem::Requirement.new("= 1.2") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rob Sanheim @ Relevance"]
-  s.date = %q{2008-10-17}
+  s.date = %q{2008-11-08}
   s.default_executable = %q{gem_sync}
   s.description = %q{Tool to install dependencies for RunCodeRun, though it could be used to bootstrap your own machines as well.}
   s.email = %q{rob@runcoderun.com}
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Gem_sync", "--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{gem_sync}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Tool to install dependencies for RunCodeRun, though it could be used to bootstrap your own machines as well.}
   s.test_files = ["spec/gem_sync_spec.rb"]
 

@@ -11,6 +11,7 @@ builder (2.1.2)
 camping (1.5)
 capistrano
 capistrano-ext
+coderay
 color (1.4.0)
 configatron (2.1.5)
 cucumber

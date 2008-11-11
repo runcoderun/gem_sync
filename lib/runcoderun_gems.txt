@@ -140,5 +140,6 @@ treetop (1.2.4)
 twitter
 uuidtools (1.0.3)
 validatable (1.6.7)
+webrat
 will_paginate (2.2.2)
 ZenTest (3.10.0)

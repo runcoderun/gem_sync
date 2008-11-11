@@ -74,6 +74,7 @@ metaid (1.0)
 mime-types (1.15)
 mislav-will_paginate (2.3.4)
 mocha (0.9.0)
+mongrel
 mosquito (0.1.3)
 mysql (2.7)
 net-ssh (2.0.4)

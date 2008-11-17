@@ -107,7 +107,8 @@ right_aws (1.8.1)
 ruby-hmac (0.3.2)
 ruby-openid
 rmagick (2.5.2)
-rspec (1.1.4)
+rspec (1.1.11, 1.1.4)
+rspec-rails (1.1.11)
 rubigen
 ruby-aaws
 ruby-debug (0.10.2)

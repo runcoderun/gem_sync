@@ -25,7 +25,6 @@ daemons (1.0.10)
 diff-lcs (1.1.2)
 dnsruby (1.2)
 do_mysql
-do_sqlite3 (0.9.5)
 echoe (3)
 eventmachine
 expectations (1.2.0)

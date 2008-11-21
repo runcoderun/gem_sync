@@ -25,7 +25,6 @@ daemons (1.0.10)
 diff-lcs (1.1.2)
 dnsruby (1.2)
 do_mysql
-do_sqlite3 (0.9.5)
 echoe (3)
 eventmachine
 expectations (1.2.0)
@@ -74,6 +73,7 @@ metaid (1.0)
 mime-types (1.15)
 mislav-will_paginate (2.3.4)
 mocha (0.9.0)
+mongrel
 mosquito (0.1.3)
 mysql (2.7)
 net-ssh (2.0.4)
@@ -106,7 +106,8 @@ right_aws (1.8.1)
 ruby-hmac (0.3.2)
 ruby-openid
 rmagick (2.5.2)
-rspec (1.1.4)
+rspec (1.1.11, 1.1.4)
+rspec-rails (1.1.11)
 rubigen
 ruby-aaws
 ruby-debug (0.10.2)
@@ -118,7 +119,7 @@ RubyInline (3.7.0)
 ruport (1.6.1)
 session
 Shoulda (1.1.1)
-spicycode-rcov (0.8.1.3.0)
+spicycode-rcov (0.8.1.5.0, 0.8.1.3.0)
 sql-parser (0.0.2)
 sqlite3-ruby (1.2.1)
 starling
@@ -140,5 +141,6 @@ treetop (1.2.4)
 twitter
 uuidtools (1.0.3)
 validatable (1.6.7)
+webrat
 will_paginate (2.2.2)
 ZenTest (3.10.0)

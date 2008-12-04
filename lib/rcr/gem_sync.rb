@@ -7,6 +7,7 @@ module Rcr
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
     RCR_GITHUB_GEM_LIST = "http://github.com/runcoderun/gem_sync/tree/master%2Flib%2Fruncoderun_gems.txt?raw=true"
+    RCR_GITHUB_GEM_BLACKLIST = ""
 
     def self.install_gems(gem_list = nil)
       gem_list = RCR_DEFAULT_GEM_LIST unless gem_list
@@ -15,10 +16,14 @@ module Rcr
       read_gem_list(gem_list)
       install_gems_from_list
       update_gems
-      uninstall_bad_gems
+      uninstall_bad_gems(gem_list)
     end
     
-    def self.uninstall_bad_gems
+    def self.uninstall_bad_gems(gem_list)
+      return unless gem_list == "__from_github__"
+      convert_gem_list(RCR_GITHUB_GEM_BLACKLIST).each do |rubygem|
+        `gem uninstall -a #{rubygem.name}`
+      end
     end
     
     def self.fail_if_gem_list_doesnt_exist(gem_list)

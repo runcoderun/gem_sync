@@ -15,6 +15,10 @@ module Rcr
       read_gem_list(gem_list)
       install_gems_from_list
       update_gems
+      uninstall_bad_gems
+    end
+    
+    def self.uninstall_bad_gems
     end
     
     def self.fail_if_gem_list_doesnt_exist(gem_list)
@@ -41,18 +45,18 @@ module Rcr
     end
     
     def self.install_gems_from_list
-      convert_gem_list(@@gem_list).each do |gem|
-        if gem_installed?(gem.name, gem.version)
-          puts "skipping #{gem.name} #{gem.version} - already installed..."
+      convert_gem_list(@@gem_list).each do |rubygem|
+        if gem_installed?(rubygem.name, rubygem.version)
+          puts "skipping #{rubygem.name} #{rubygem.version} - already installed..."
           next
         end
-        cmd = "gem install #{gem.name} --no-ri --no-rdoc"
-        cmd << " --version #{gem.version}" if gem.version
+        cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
+        cmd << " --version #{rubygem.version}" if gem.version
         puts cmd
         puts `#{cmd}`
         unless $?.success?
           cmd << " --source #{GITHUB}"
-          puts "***** WARNING Trying to install gem #{gem.name} from github - watch for security issues."
+          puts "***** WARNING Trying to install gem #{rubygem.name} from github - watch for security issues."
           puts cmd
           puts `#{cmd}`
         end

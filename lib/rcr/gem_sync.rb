@@ -3,7 +3,7 @@ require 'open-uri'
 
 module Rcr
   class GemSync
-    VERSION = '0.5.3'
+    VERSION = '0.5.3.1'
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
     RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"
@@ -22,7 +22,9 @@ module Rcr
     def self.uninstall_bad_gems(gem_list)
       return unless gem_list == "__from_github__"
       convert_gem_list(RCR_GITHUB_GEM_BLACKLIST).each do |rubygem|
-        `gem uninstall -a -x #{rubygem.name}`
+        cmd = "gem uninstall -a -x #{rubygem.name}"
+        puts cmd
+        `#{cmd}`
       end
     end
     

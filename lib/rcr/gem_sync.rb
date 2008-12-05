@@ -56,7 +56,7 @@ module Rcr
           next
         end
         cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
-        cmd << " --version #{rubygem.version}" if gem.version
+        cmd << " --version #{rubygem.version}" if rubygem.version
         puts cmd
         puts `#{cmd}`
         unless $?.success?

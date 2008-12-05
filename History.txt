@@ -1,3 +1,9 @@
+=== 0.5.3
+* Better urls for the gem list from github, plain old .txt works now
+
+=== 0.5.2
+* support for gem blacklist, which are always uninstalled at the end of the run
+
 === 0.4.6
 * Bug fixes
 

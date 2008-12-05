@@ -3,11 +3,11 @@ require 'open-uri'
 
 module Rcr
   class GemSync
-    VERSION = '0.5.2.1'
+    VERSION = '0.5.3'
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
-    RCR_GITHUB_GEM_LIST = "http://github.com/runcoderun/gem_sync/tree/master%2Flib%2Fruncoderun_gems.txt?raw=true"
-    RCR_GITHUB_GEM_BLACKLIST = ""
+    RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"
+    RCR_GITHUB_GEM_BLACKLIST = "http://github.com/runcoderun/gem_sync/raw/master/lib/gem_blacklist.txt"
 
     def self.install_gems(gem_list = nil)
       gem_list = RCR_DEFAULT_GEM_LIST unless gem_list

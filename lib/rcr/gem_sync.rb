@@ -21,7 +21,8 @@ module Rcr
     
     def self.uninstall_bad_gems(gem_list)
       return unless gem_list == "__from_github__"
-      convert_gem_list(RCR_GITHUB_GEM_BLACKLIST).each do |rubygem|
+      blacklist = open(RCR_GITHUB_GEM_BLACKLIST).read
+      convert_gem_list(blacklist).each do |rubygem|
         cmd = "gem uninstall -a -x #{rubygem.name}"
         puts cmd
         `#{cmd}`

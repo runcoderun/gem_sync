@@ -33,8 +33,10 @@ describe 'GemSync' do
       Rcr::GemSync.read_gem_list "/my/gems.txt"
     end
     
-    it "reads from gem list on github if passed github param" do
+    it "reads from gem list and blacklist on github if passed github param" do
       Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_GITHUB_GEM_LIST).returns(StringIO.new)
+      Rcr::GemSync.expects(:open).with(Rcr::GemSync::RCR_GITHUB_GEM_BLACKLIST).returns(StringIO.new)
+      
       Rcr::GemSync.install_gems "__from_github__"
     end
 

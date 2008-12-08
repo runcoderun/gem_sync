@@ -125,6 +125,7 @@ sql-parser (0.0.2)
 sqlite3-ruby (1.2.1)
 starling
 starling-starling
+stone
 syntax
 systemu (1.2.0)
 technicalpickles-echoe (3)

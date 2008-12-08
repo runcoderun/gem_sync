@@ -12,3 +12,8 @@ Echoe.new('gem_sync', Rcr::GemSync::VERSION) do |p|
   p.test_pattern = 'spec/**/*_spec.rb'
   p.gemspec_format = :ruby
 end
+
+desc 'Load the library in an IRB session'
+task :console do
+  sh %(irb -r lib/rcr/gem_sync.rb)
+end

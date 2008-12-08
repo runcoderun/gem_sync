@@ -21,6 +21,7 @@ module Rcr
     
     def self.uninstall_bad_gems(gem_list)
       return unless gem_list == "__from_github__"
+      puts "Uninstalling any gems on the blacklist..."
       blacklist = open(RCR_GITHUB_GEM_BLACKLIST).read
       convert_gem_list(blacklist).each do |rubygem|
         cmd = "gem uninstall -a -x #{rubygem.name}"
@@ -37,6 +38,7 @@ module Rcr
     end
     
     def self.update_self
+      puts "Updating runcoderun-gem_sync from github..."
       puts `gem update runcoderun-gem_sync --source #{GITHUB}`
     end
     

@@ -124,6 +124,7 @@ Shoulda (1.1.1)
 spicycode-rcov (0.8.1.5.0, 0.8.1.3.0)
 sql-parser (0.0.2)
 sqlite3-ruby (1.2.1)
+spicycode-micronaut
 starling
 starling-starling
 stone

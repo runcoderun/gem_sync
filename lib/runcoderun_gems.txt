@@ -131,6 +131,7 @@ stone
 syntax
 systemu (1.2.0)
 technicalpickles-echoe (3)
+technicalpickles-jeweler
 termios (0.9.4)
 term-ansicolor (1.0.3)
 thoughtbot-clearance (0.1.6)

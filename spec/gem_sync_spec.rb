@@ -63,6 +63,12 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
       gems[2].version.should == "3.10.0"
       gems[3].version.should == "3.9.2"
     end
+    
+    it "can use version strings" do
+      list = %[do_sqlite3 (<= 0.9.8)]
+      gems = Rcr::GemSync.convert_gem_list(list)
+      gems.first.version.should == '<= 0.9.8'
+    end
   end
   
   describe "parsing versions" do

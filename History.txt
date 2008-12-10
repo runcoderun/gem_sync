@@ -1,3 +1,6 @@
+=== 0.5.4 
+* Can use gem version strings to uninstall things on the blacklist
+
 === 0.5.3
 * Better urls for the gem list from github, plain old .txt works now
 

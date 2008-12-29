@@ -41,7 +41,6 @@ geminstaller
 git (1.0.5)
 god (0.7.8)
 haml (2.0.2, 2.0.1)
-hanna
 heckle (1.4.1)
 highline (1.4.0)
 htmlentities (4.0.0)
@@ -73,6 +72,7 @@ merb-manage (0.4)
 merb-more (0.9.9)
 metaid (1.0)
 mime-types (1.15)
+mislav-hanna
 mislav-will_paginate (2.3.4)
 mocha (0.9.0)
 mongrel

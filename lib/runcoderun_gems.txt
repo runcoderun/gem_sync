@@ -36,6 +36,7 @@ fastercsv (1.2.3)
 fattr (1.0.3)
 flexmock (0.8.2)
 flog (1.1.0)
+hashtostruct
 money
 geminstaller
 git (1.0.5)
@@ -118,6 +119,7 @@ ruby-json (1.1.2)
 ruby2ruby (1.1.9)
 rubyforge (1.0.0)
 ruby-net-ldap (0.0.4)
+rubyzip
 RubyInline (3.7.0)
 ruport (1.6.1)
 session

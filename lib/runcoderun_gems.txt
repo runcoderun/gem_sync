@@ -11,6 +11,7 @@ builder (2.1.2)
 camping (1.5)
 capistrano
 capistrano-ext
+chrisk-fakeweb
 coderay
 color (1.4.0)
 configatron (2.1.5)
@@ -33,7 +34,6 @@ extlib (0.9.5)
 facets (2.4.4, 2.4.1, 2.3.0, 2.2.1, 2.2.0, 2.1.3, 2.0.5)
 factory_girl
 faker
-fake-web
 fastercsv (1.2.3)
 fattr (1.0.3)
 flexmock (0.8.2)

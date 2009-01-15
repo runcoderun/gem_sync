@@ -116,6 +116,7 @@ right_aws (1.8.1)
 rr
 ruby-hmac (0.3.2)
 ruby-openid
+runcoderun-configatron
 rmagick (2.5.2)
 rspec (1.1.11, 1.1.4)
 rspec-rails (1.1.11)

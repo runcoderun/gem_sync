@@ -112,6 +112,7 @@ relevance-test-spec
 relevance-github_hook (0.5.8)
 rdiscount
 right_aws (1.8.1)
+rr
 ruby-hmac (0.3.2)
 ruby-openid
 rmagick (2.5.2)

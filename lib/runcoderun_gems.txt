@@ -131,6 +131,8 @@ rubyzip
 RubyInline (3.7.0)
 ruport (1.6.1)
 session
+selenium-client
+selenium
 sinatra
 spicycode-rcov (0.8.1.5.0, 0.8.1.3.0)
 sql-parser (0.0.2)

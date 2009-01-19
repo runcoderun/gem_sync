@@ -36,7 +36,7 @@ factory_girl
 faker
 fastercsv (1.2.3)
 fattr (1.0.3)
-feed_validator
+feedvalidator
 flexmock (0.8.2)
 flog (1.1.0)
 hashtostruct

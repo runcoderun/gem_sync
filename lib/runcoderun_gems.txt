@@ -161,6 +161,7 @@ tinder (1.1.7)
 transaction-simple (1.4.0)
 treetop (1.2.4)
 twitter
+unit_record
 uuidtools (1.0.3)
 validatable (1.6.7)
 webrat

@@ -174,5 +174,6 @@ uuidtools (1.0.3)
 validatable (1.6.7)
 webrat
 xml-simple
+watir
 will_paginate (2.2.2)
 ZenTest (3.10.0)

@@ -26,6 +26,9 @@ dancroak-twitter-search (0.5)
 dancroak-validates_email_format_of (1.2.1)
 data_objects (0.9.6)
 daemons (1.0.10)
+dbi
+dbd-mysql
+dbd-sqlite3
 diff-lcs (1.1.2)
 dnsruby (1.2)
 do_mysql

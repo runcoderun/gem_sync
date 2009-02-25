@@ -1,1 +1,2 @@
+watir
 do_sqlite3 (<= 0.9.8)

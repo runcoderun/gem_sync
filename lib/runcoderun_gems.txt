@@ -104,6 +104,7 @@ ParseTree (2.2.0)
 pdf-writer (1.1.8)
 picnic (0.6.4)
 polyglot (0.2.3)
+prawn
 quietbacktrace
 rack (0.4.0)
 rails (2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)

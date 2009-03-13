@@ -14,6 +14,7 @@ camping (1.5)
 capistrano
 capistrano-ext
 chrisk-fakeweb
+chronic
 coderay
 color (1.4.0)
 configatron (2.1.5)
@@ -47,6 +48,7 @@ flog (1.1.0)
 hashtostruct
 money
 geminstaller
+ginger
 git (1.0.5)
 god (0.7.8)
 grempe-amazon-ec2

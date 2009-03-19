@@ -48,7 +48,7 @@ flog (1.1.0)
 hashtostruct
 money
 geminstaller
-ginger
+freelancing-god-ginger
 git (1.0.5)
 god (0.7.8)
 grempe-amazon-ec2

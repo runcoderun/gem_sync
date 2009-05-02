@@ -113,10 +113,10 @@ picnic (0.6.4)
 polyglot (0.2.3)
 prawn
 quietbacktrace
-rack (0.4.0)
-rack-test
-rails (2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
-rake (0.8.1)
+rack (1.0.0, 0.9.1, 0.4.0)
+rack-test (0.2.0, 0.1.0)
+rails (2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
+rake (0.8.4, 0.8.3, 0.8.1)
 rcov (0.8.1.2.0)
 RedCloth (4.0.3, 4.0.1, 3.0.4, 3.0.3)
 remarkably
@@ -141,7 +141,7 @@ runcoderun-configatron
 rmagick (2.5.2)
 rspec (1.1.11, 1.1.4)
 rspec_hpricot_matchers
-rspec-rails (1.1.11)
+rspec-rails (1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rubigen
 ruby-aaws
 ruby-debug (0.10.2)

@@ -5,6 +5,7 @@ addressable (1.0.4)
 allison (2.0.3)
 archive-tar-minitar (0.5.2)
 arrayfields (4.6.0)
+authlogic
 bacon
 bcrypt-ruby (2.0.3)
 beanstalk-client (1.0.2)
@@ -112,6 +113,7 @@ ParseTree (2.2.0)
 pdf-writer (1.1.8)
 picnic (0.6.4)
 polyglot (0.2.3)
+populator
 prawn
 quietbacktrace
 rack (1.0.0, 0.9.1, 0.4.0)
@@ -185,6 +187,7 @@ tinder (1.1.7)
 transaction-simple (1.4.0)
 treetop (1.2.4)
 twitter
+tzinfo
 unit_record
 uuidtools (1.0.3)
 validatable (1.6.7)

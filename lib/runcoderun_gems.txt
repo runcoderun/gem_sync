@@ -94,6 +94,7 @@ merb-mailer (0.9.9)
 merb-manage (0.4)
 merb-more (0.9.9)
 metaid (1.0)
+metric_fu
 mhennemeyer-output_catcher
 mime-types (1.15)
 mislav-hanna

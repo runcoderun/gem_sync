@@ -132,7 +132,7 @@ relevance-log_buddy (0.4.10)
 relevance-multi_rails (0.0.7)
 relevance-rcov (0.8.3.1)
 relevance-rubycas-server (0.6.99)
-relevance-tarantula (0.0.5)
+relevance-tarantula
 relevance-test-spec
 relevance-github_hook (0.5.8)
 rdiscount

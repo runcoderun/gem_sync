@@ -6,6 +6,7 @@ allison (2.0.3)
 archive-tar-minitar (0.5.2)
 arrayfields (4.6.0)
 authlogic
+aws-s3
 bacon
 bcrypt-ruby (2.0.3)
 beanstalk-client (1.0.2)

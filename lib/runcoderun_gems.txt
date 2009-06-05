@@ -12,6 +12,7 @@ bcrypt-ruby (2.0.3)
 beanstalk-client (1.0.2)
 bj (1.0.1)
 builder (2.1.2)
+cache_money
 camping (1.5)
 capistrano
 capistrano-ext

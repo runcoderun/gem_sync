@@ -112,6 +112,7 @@ nagoro
 net-ssh (2.0.4)
 newgem
 obsidian
+oniguruma
 open4 (0.9.6)
 orderedhash (0.0.4)
 ParseTree (2.2.0)

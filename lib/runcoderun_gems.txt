@@ -118,6 +118,7 @@ orderedhash (0.0.4)
 ParseTree (2.2.0)
 pdf-writer (1.1.8)
 picnic (0.6.4)
+plist
 polyglot (0.2.3)
 populator
 prawn

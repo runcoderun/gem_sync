@@ -49,10 +49,12 @@ fastercsv (1.2.3)
 fattr (1.0.3)
 feedvalidator
 feed-normalizer
+fireeagle
 flexmock (0.8.2)
 flog (1.1.0)
 hashtostruct
 money
+geokit
 geminstaller
 freelancing-god-ginger
 git (1.0.5)
@@ -84,6 +86,7 @@ log_buddy (0.4.10)
 main (2.8.2)
 markaby (0.5)
 maruku
+mbleigh-acts-as-taggable-on
 mechanize
 memcached
 memcache-client

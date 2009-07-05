@@ -194,6 +194,7 @@ thoughtbot-shoulda (2.0.2)
 test-spec (0.9.0)
 tidy (1.1.2)
 tinder (1.1.7)
+tmm1-amqp
 transaction-simple (1.4.0)
 treetop (1.2.4)
 twitter

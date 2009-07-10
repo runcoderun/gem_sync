@@ -145,6 +145,7 @@ relevance-rubycas-server (0.6.99)
 relevance-tarantula
 relevance-test-spec
 relevance-github_hook (0.5.8)
+remarkable_rails
 rdiscount
 right_aws (1.8.1)
 rio

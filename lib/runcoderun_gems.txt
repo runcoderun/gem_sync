@@ -70,6 +70,7 @@ highline (1.4.0)
 htmlentities (4.0.0)
 httparty
 httpauth
+httpclient
 hoe (1.7.0)
 hpricot (0.6)
 icalendar (1.0.2)

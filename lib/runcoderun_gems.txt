@@ -127,6 +127,7 @@ oniguruma
 open4 (0.9.6)
 orderedhash (0.0.4)
 ParseTree (2.2.0)
+patron
 pdf-writer (1.1.8)
 picnic (0.6.4)
 plist

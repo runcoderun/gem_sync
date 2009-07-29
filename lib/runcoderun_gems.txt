@@ -1,101 +1,123 @@
-andand
-activesupport (2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
+actionmailer (2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 1.3.6)
+actionpack (2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 1.13.6)
+actionwebservice (1.2.6)
+activerecord (2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.15.6)
+activeresource (2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1)
+activesupport (2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
 acts_as_reportable (1.1.1)
-addressable (1.0.4)
+addressable (2.0.2, 1.0.4)
 allison (2.0.3)
+andand
 archive-tar-minitar (0.5.2)
-arrayfields (4.6.0)
+arrayfields (4.7.3, 4.6.0)
 authlogic
 aws-s3
 bacon
-bcrypt-ruby (2.0.3)
+bcrypt-ruby (2.0.5, 2.0.3)
 beanstalk-client (1.0.2)
-bmabey-email_spec
 bj (1.0.1)
+bmabey-email_spec
 builder (2.1.2)
 cache_money
 camping (1.5)
 capistrano
 capistrano-ext
+cgi_multipart_eof_fix (2.5.0)
 chrisk-fakeweb
 chronic
 coderay
 color (1.4.0)
-configatron (2.1.5)
+configatron (2.2.2, 2.1.5)
+configuration (0.0.5)
 context
-cucumber
+crack (0.1.3)
+csv-mapper (0.0.3)
+cucumber (0.3.11, 0.3.0)
+daemons (1.0.10)
 dancroak-clearance (0.1.3)
 dancroak-clearance-admin (0.0.1)
 dancroak-ruby-summize (0.4)
 dancroak-twitter-search (0.5)
 dancroak-validates_email_format_of (1.2.1)
-data_objects (0.9.6)
-daemons (1.0.10)
-dbi
+data_objects (0.9.12, 0.9.6)
 dbd-mysql
 dbd-sqlite3
+dbi
 diff-lcs (1.1.2)
-dnsruby (1.2)
+dm-core (0.9.11)
+dm-tags (0.9.11)
+dm-validations (0.9.11)
+dnsruby (1.26, 1.24, 1.2)
 do_mysql
-echoe (3)
+echoe (3.1.1, 3.0.2, 3)
 eventmachine
 expectations (1.2.0)
-extlib (0.9.5)
+extensions (0.6.0)
+extlib (0.9.12, 0.9.5)
 ezamar
-facets (2.4.4, 2.4.1, 2.3.0, 2.2.1, 2.2.0, 2.1.3, 2.0.5)
+facets (2.5.2, 2.5.0, 2.4.5, 2.4.4, 2.4.1, 2.3.0, 2.2.1, 2.2.0, 2.1.3, 2.0.5)
 factory_girl
 faker
 fakeweb
-fastercsv (1.2.3)
+fastercsv (1.4.0, 1.2.3)
+fastthread (1.0.7, 1.0.1)
 fattr (1.0.3)
-feedvalidator
 feed-normalizer
+feedvalidator
 fireeagle
-flexmock (0.8.2)
-flog (1.1.0)
-freelancing-god-thinking-sphinx
-hashtostruct
-log4r
-money
-geokit
-geminstaller
+flay (1.3.0, 1.2.1)
+flexmock (0.8.6, 0.8.3, 0.8.2)
+flog (2.1.0, 2.0.0, 1.1.0)
 freelancing-god-ginger
+freelancing-god-thinking-sphinx
+geminstaller
+gem_plugin (0.2.3)
+geokit
 git (1.0.5)
-god (0.7.8)
+god (0.7.13, 0.7.12, 0.7.8)
+google-geocode (1.2.1)
 grempe-amazon-ec2
-haml (2.0.2, 2.0.1)
+haml (2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
 happymapper
-heckle (1.4.1)
-highline (1.4.0)
+hashtostruct
+heckle (1.4.2, 1.4.1)
+highline (1.5.0, 1.4.0)
+hoe (1.12.2, 1.8.3, 1.8.2, 1.7.0)
+hpricot (0.8.1, 0.6.164, 0.6)
 htmlentities (4.0.0)
 httparty
 httpauth
 httpclient
-hoe (1.7.0)
-hpricot (0.6)
-icalendar (1.0.2)
+icalendar (1.1.0, 1.0.2)
 image_science (1.1.3)
 innate
+javan-whenever (0.3.5)
 jeremymcanally-context (0.5)
 jeremymcanally-matchy (0.0.1)
 jeremymcanally-pending (0.1)
 jeremymcanally-stump (0.0.2)
-json (1.1.3)
+jnunemaker-twitter (0.6.12)
+jscruggs-metric_fu (1.1.4, 1.0.2)
+json (1.1.4, 1.1.3)
 jsonbuilder
-launchy (0.3.2)
+kematzy-sinatra-cache (0.2.2)
+lame_encoder (0.1.1)
+launchy (0.3.3, 0.3.2)
 less
-libxml-ruby (0.8.3)
-locale
+libxml-ruby (1.1.3, 0.9.8, 0.8.3)
 Linguistics
 liquid
-log_buddy (0.4.10)
-main (2.8.2)
+locale
+log4r
+log_buddy (0.4.10, 0.4.9, 0.0.5)
+main (2.8.3, 2.8.2)
 markaby (0.5)
 maruku
+mash (0.0.3)
 mbleigh-acts-as-taggable-on
 mechanize
-memcached
 memcache-client
+memcached (0.12, 0.11)
 merb-core (0.9.9)
 merb-exceptions (0.9.9)
 merb-freezer (0.9.5)
@@ -109,109 +131,128 @@ merb-more (0.9.9)
 metaid (1.0)
 metric_fu
 mhennemeyer-output_catcher
-mime-types (1.15)
+mime-types (1.16, 1.15)
 minitest
 mislav-hanna
-mislav-will_paginate (2.3.4)
-mocha (0.5.6, 0.9.0)
-mojombo-grit
+mislav-will_paginate (2.3.11, 2.3.4)
+mocha (0.9.5, 0.9.4, 0.9.0)
+mojombo-chronic (0.3.0)
+mojombo-grit (1.1.1, 0.9.4)
+money
 mongrel
-mosquito (0.1.3)
+mosquito (0.1.4, 0.1.3)
 mwmitchell-rsolr
 mysql (2.7)
 nagoro
-net-ssh (2.0.4)
-newgem
+net-ssh (2.0.11, 2.0.4)
+newgem (1.3.0, 1.2.3, 1.1.0)
+nokogiri (1.3.2)
+oauth (0.3.4)
 obsidian
-oniguruma
+oniguruma (1.1.0)
 open4 (0.9.6)
-orderedhash (0.0.4)
-ParseTree (2.2.0)
+orderedhash (0.0.6, 0.0.4)
+packet (0.1.15, 0.1.14)
+ParseTree (3.0.3, 2.2.0)
 pdf-writer (1.1.8)
-picnic (0.6.4)
+peterwald-git (1.1.4)
+picnic (0.8.0, 0.7.1, 0.6.4)
 plist
-polyglot (0.2.3)
+polyglot (0.2.6, 0.2.5, 0.2.3)
 populator
 prawn
 quietbacktrace
 rack (1.0.0, 0.9.1, 0.4.0)
 rack-test (0.2.0, 0.1.0)
 rails (2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
-rake (0.8.4, 0.8.3, 0.8.1)
-RedCloth (4.0.3, 4.0.1, 3.0.4, 3.0.3)
-remarkably
+rake (0.8.7, 0.8.4, 0.8.3, 0.8.2, 0.8.1)
+rc-rest (2.2.1)
+rdiscount
+RedCloth (4.1.9, 4.1.1, 4.0.3, 4.0.1, 3.0.4, 3.0.3)
 redgreen (1.2.2)
+reek (1.1.3)
 relevance-cap_gun (0.0.7)
 relevance-castronaut (0.3.6)
 relevance-github_hook (0.7.0)
 relevance-grit (0.8.3)
 relevance-log_buddy (0.4.10)
 relevance-multi_rails (0.0.7)
-relevance-rcov (0.8.3.1)
+relevance-rcov
 relevance-rubycas-server (0.6.99)
 relevance-tarantula
 relevance-test-spec
-relevance-github_hook (0.5.8)
+remarkable (3.1.7)
+remarkable_activerecord (3.1.7)
 remarkable_rails
-rdiscount
+remarkably
+rest-client (0.9.2, 0.7)
 right_aws (1.8.1)
 rio
+rmagick (2.10.0, 2.9.1, 2.6.0, 2.5.2)
+roodi (1.4.0)
 rr
-ruby-hmac (0.3.2)
-ruby-openid
-runcoderun-configatron
-rmagick (2.5.2)
-rspec (1.1.11, 1.1.4)
+rspec (1.2.7, 1.2.4, 1.1.8, 1.1.4, 0.5.0)
+rspec-rails (1.2.7.1, 1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rspec_hpricot_matchers
-rspec-rails (1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rubigen
 ruby-aaws
 ruby-debug (0.10.2)
+ruby-hmac (0.3.2)
 ruby-json (1.1.2)
-ruby2ruby (1.1.9)
-rubyforge (1.0.0)
 ruby-net-ldap (0.0.4)
+ruby-openid
+ruby2ruby (1.2.2, 1.1.9)
+rubyforge (1.0.3, 1.0.2, 1.0.1, 1.0.0)
+rubygems-update (1.3.2, 1.3.1)
+RubyInline (3.8.1, 3.7.0)
 rubyzip
-RubyInline (3.7.0)
+ruby_parser (2.0.3, 2.0.2)
+runcoderun-configatron
+runcoderun-gem_sync
 ruport (1.6.1)
-session
-selenium-client
+schacon-git (1.0.7)
 selenium
+selenium-client
+session
+sexp_processor (3.0.1)
+Shoulda (1.2.0, 1.1.1)
 sinatra
-sql-parser (0.0.2)
-sqlite3-ruby (1.2.1)
 spicycode-micronaut
 spicycode-micronaut-rails
+sql-parser (0.0.2)
+sqlite3-ruby (1.2.4, 1.2.1)
 starling
 starling-starling
-stone
 stomp
+stone
 syntax
 systemu (1.2.0)
+system_timer (1.0)
 tagz
 technicalpickles-echoe (3)
 technicalpickles-jeweler
-termios (0.9.4)
 term-ansicolor (1.0.3)
+termios (0.9.4)
+test-spec (0.10.0, 0.9.0)
 thin
 thinking_sphinx
 thoughtbot-clearance (0.1.6)
-thoughtbot-factory_girl (1.1.3)
+thoughtbot-factory_girl (1.2.1, 1.1.3)
 thoughtbot-quietbacktrace (1.1.4)
 thoughtbot-shoulda (2.0.2)
-test-spec (0.9.0)
 tidy (1.1.2)
-tinder (1.1.7)
+tinder (1.2.0, 1.1.7)
 tmm1-amqp
+topfunky-gruff (0.3.5)
 transaction-simple (1.4.0)
-treetop (1.2.4)
+treetop (1.2.6, 1.2.5, 1.2.4)
 twitter
 tzinfo
 unit_record
-uuidtools (1.0.3)
+uuidtools (1.0.7, 1.0.3)
 validatable (1.6.7)
 webrat
-xml-simple
 will_paginate (2.2.2)
+xml-simple
 ym4r
-ZenTest (3.10.0)
+ZenTest (4.0.0, 3.11.1, 3.10.0)

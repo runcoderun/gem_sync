@@ -1,6 +1,9 @@
-require 'test/spec'
+require 'rubygems'
+gem 'spicycode-micronaut'
+require 'micronaut'
 require 'mocha'
 require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
+require File.join(File.dirname(__FILE__), *%w[example_helper])
 
 describe 'GemSync' do
 

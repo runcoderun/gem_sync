@@ -8,6 +8,7 @@ acts_as_reportable (1.1.1)
 addressable (2.0.2, 1.0.4)
 allison (2.0.3)
 andand
+andre-geokit
 archive-tar-minitar (0.5.2)
 arrayfields (4.7.3, 4.6.0)
 authlogic
@@ -117,6 +118,7 @@ markaby (0.5)
 maruku
 mash (0.0.3)
 mbleigh-acts-as-taggable-on
+mdoel-cukesteps
 mechanize
 memcache-client
 memcached (0.12, 0.11)

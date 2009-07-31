@@ -45,6 +45,7 @@ data_objects (0.9.12, 0.9.6)
 dbd-mysql
 dbd-sqlite3
 dbi
+dfl-factories-and-workers
 diff-lcs (1.1.2)
 dm-core (0.9.11)
 dm-tags (0.9.11)
@@ -76,6 +77,7 @@ freelancing-god-thinking-sphinx
 geminstaller
 gem_plugin (0.2.3)
 geokit
+giraffesoft-resource_controller
 git (1.0.5)
 god (0.7.13, 0.7.12, 0.7.8)
 google-geocode (1.2.1)
@@ -103,6 +105,7 @@ jnunemaker-twitter (0.6.12)
 jscruggs-metric_fu (1.1.4, 1.0.2)
 json (1.1.4, 1.1.3)
 jsonbuilder
+juggernaut
 kematzy-sinatra-cache (0.2.2)
 lame_encoder (0.1.1)
 launchy (0.3.3, 0.3.2)

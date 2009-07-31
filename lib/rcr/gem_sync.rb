@@ -3,7 +3,7 @@ require 'open-uri'
 
 module Rcr
   class GemSync
-    VERSION = '0.5.8'
+    VERSION = '0.5.9'
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
     RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"

@@ -1,3 +1,6 @@
+=== 0.5.5
+* Updated tons of new gems
+
 === 0.5.4 
 * Can use gem version strings to uninstall things on the blacklist
 

@@ -272,6 +272,7 @@ uuidtools (1.0.7, 1.0.3)
 validatable (1.6.7)
 webrat
 will_paginate (2.2.2)
+xmlelements
 xml-simple
 yard
 ym4r

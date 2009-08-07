@@ -54,6 +54,7 @@ dnsruby (1.26, 1.24, 1.2)
 do_mysql
 echoe (3.1.1, 3.0.2, 3)
 editalign
+erubis
 eventmachine
 expectations (1.2.0)
 extensions (0.6.0)
@@ -160,6 +161,10 @@ obsidian
 ohai
 oniguruma (1.1.0)
 open4 (0.9.6)
+opscode-ohai
+opscode-mixlib-cli (1.0.4)
+opscode-mixlib-config (1.0.9)
+opscode-mixlib-log (1.0.3)
 patron
 orderedhash (0.0.6, 0.0.4)
 packet (0.1.15, 0.1.14)

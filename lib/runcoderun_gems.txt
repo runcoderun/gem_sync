@@ -10,6 +10,7 @@ allison (2.0.3)
 andand
 andre-geokit
 archive-tar-minitar (0.5.2)
+ar-extensions
 arrayfields (4.7.3, 4.6.0)
 authlogic
 aws-s3

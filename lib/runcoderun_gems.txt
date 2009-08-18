@@ -83,6 +83,7 @@ giraffesoft-resource_controller
 git (1.0.5)
 god (0.7.13, 0.7.12, 0.7.8)
 google-geocode (1.2.1)
+grancher
 grempe-amazon-ec2
 haml (2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
 happymapper
@@ -150,6 +151,7 @@ mixlib-log (1.0.3)
 mocha (0.9.5, 0.9.4, 0.9.0)
 mojombo-chronic (0.3.0)
 mojombo-grit (1.1.1, 0.9.4)
+mojombo-jekyll
 money
 mongrel
 mosquito (0.1.4, 0.1.3)
@@ -186,6 +188,7 @@ rack (1.0.0, 0.9.1, 0.4.0)
 rack-test (0.2.0, 0.1.0)
 rails (2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
 rake (0.8.7, 0.8.4, 0.8.3, 0.8.2, 0.8.1)
+railroad
 rc-rest (2.2.1)
 rdiscount
 RedCloth (4.1.9, 4.1.1, 4.0.3, 4.0.1, 3.0.4, 3.0.3)

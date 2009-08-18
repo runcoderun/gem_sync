@@ -247,7 +247,7 @@ spicycode-micronaut
 spicycode-micronaut-rails
 spork
 sql-parser (0.0.2)
-sqlite3-ruby (1.2.4, 1.2.1)
+sqlite3-ruby (1.2.4, 1.2.3, 1.2.1)
 starling
 starling-starling
 stomp

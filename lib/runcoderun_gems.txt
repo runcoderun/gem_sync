@@ -180,6 +180,7 @@ peterwald-git (1.1.4)
 picnic (0.8.0, 0.7.1, 0.6.4)
 plist
 polyglot (0.2.6, 0.2.5, 0.2.3)
+postgres
 populator
 prawn
 PriorityQueue

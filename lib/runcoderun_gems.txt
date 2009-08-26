@@ -4,7 +4,7 @@ actionwebservice (1.2.6)
 activerecord (2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.15.6)
 activeresource (2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1)
 activesupport (2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
-active_merchant
+activemerchant
 acts_as_reportable (1.1.1)
 addressable (2.0.2, 1.0.4)
 allison (2.0.3)

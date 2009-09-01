@@ -241,6 +241,7 @@ rubyist-aasm
 runcoderun-configatron
 runcoderun-gem_sync
 ruport (1.6.1)
+sax-machine
 schacon-git (1.0.7)
 selenium
 selenium-client

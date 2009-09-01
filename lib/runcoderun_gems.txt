@@ -99,6 +99,7 @@ htmlentities (4.0.0)
 httparty
 httpauth
 httpclient
+ianwhite-garlic
 icalendar (1.1.0, 1.0.2)
 image_science (1.1.3)
 innate

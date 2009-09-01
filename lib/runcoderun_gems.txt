@@ -178,6 +178,7 @@ patron
 orderedhash (0.0.6, 0.0.4)
 packet (0.1.15, 0.1.14)
 ParseTree (3.0.3, 2.2.0)
+pauldix-sax-machine
 pdf-writer (1.1.8)
 peterwald-git (1.1.4)
 picnic (0.8.0, 0.7.1, 0.6.4)
@@ -241,7 +242,6 @@ rubyist-aasm
 runcoderun-configatron
 runcoderun-gem_sync
 ruport (1.6.1)
-sax-machine
 schacon-git (1.0.7)
 selenium
 selenium-client

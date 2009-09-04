@@ -1,17 +1,21 @@
 require 'rubygems'
-require 'echoe'
-gem "spicycode-micronaut"
-require 'micronaut'
+require 'rake'
 require 'micronaut/rake_task'
 
-Echoe.new('gem_sync', "0.5.13") do |p|
-  p.rubyforge_name = 'gem_sync'
-  p.email = 'rob@runcoderun.com'
-  p.author = ["Rob Sanheim @ Relevance"]
-  p.summary = "Tool to install dependencies for RunCodeRun, though it could be used to bootstrap your own machines as well."
-  p.url = "http://runcoderun.com"
-  p.test_pattern = 'examples/**/*_example.rb'
-  p.gemspec_format = :ruby
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "gem_sync"
+    gem.summary = %Q{gem_sync}
+    gem.description = %Q{Tool to install rubygems for RunCodeRun, though it could be used to bootstrap your own machines as well.}
+    gem.email = "rob@runcoderun.com"
+    gem.homepage = "http://github.com/runcoderun/gem_sync"
+    gem.authors = ["Rob Sanheim"]
+    gem.add_development_dependency "spicycode-micronaut"
+    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+  end
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
 
 Micronaut::RakeTask.new(:examples)
@@ -30,3 +34,5 @@ desc 'Load the library in an IRB session'
 task :console do
   sh %(irb -r lib/rcr/gem_sync.rb)
 end
+
+task :default => [:check_dependencies, :examples]

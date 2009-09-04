@@ -36,6 +36,10 @@ module Rcr
       end
     end
     
+    def installed?
+      
+    end
+    
     def install!(rubygem)
       install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end

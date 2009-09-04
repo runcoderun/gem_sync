@@ -55,6 +55,9 @@ EOL
       gem_sync.expects(:run).with("gem install johndoe-foo --no-ri --no-rdoc --version 1.0.0 --source http://gems.github.com")
       gem_sync.install!(gem)
     end
+  end
+  
+  describe "installed?" do
     
   end
   

@@ -31,3 +31,5 @@ desc 'Load the library in an IRB session'
 task :console do
   sh %(irb -r lib/rcr/gem_sync.rb)
 end
+
+task :default => :examples

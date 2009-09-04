@@ -17,6 +17,14 @@ module Rcr
           options[:github] = o
           options[:gem_list] = Rcr::GemSync::RCR_GITHUB_GEM_LIST
         end
+        
+        opts.on('-v', '--version', 'Run in verbose mode') do |o|
+          options[:verbose] = o
+        end
+        
+        opts.on('-n', '--dry-run', 'Do a dry run without executing actions') do |o|
+          options[:dry_run] = o
+        end
       end.parse!(args)
 
       options

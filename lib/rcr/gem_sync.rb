@@ -16,6 +16,7 @@ module Rcr
       @verbose = options[:verbose]
       @dry_run = options[:dry_run]
       @gem_list = options[:gem_list]
+      system("gem env") if verbose?
     end
     
     def verbose?

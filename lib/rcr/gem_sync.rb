@@ -56,8 +56,8 @@ module Rcr
       end
     end
     
-    def installed?(name, version)
-      installed_gems.detect {|gem| gem.name == name && gem.version == version}
+    def installed?(rubygem)
+      installed_gems.detect {|gem| gem.name == rubygem.name && gem.version == rubygem.version}
     end
     
     def installed_gems

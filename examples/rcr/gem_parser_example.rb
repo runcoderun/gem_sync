@@ -9,6 +9,15 @@ describe Rcr::GemParser do
       gems[0].name.should == "wirble"
       gems[0].version.should == nil
     end
+    
+    it "parses okay with commented lines" do
+      list = %[# here is a comment
+# and another
+
+xml-simple (1.0.11)]
+      gems = Rcr::GemParser.convert_gem_list(list)
+      gems.size.should == 1
+    end
 
     it "parses gem list" do
       list = %[wirble (0.1.2)
@@ -84,6 +93,14 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
     end
 
     describe "parsing gem names" do
+      it "returns nil for comments" do
+        Rcr::GemParser.parse_name("# I hate factory-girl").should be_nil
+      end
+      
+      it "returns nil for empty lines" do
+        Rcr::GemParser.parse_name("   ").should be_nil
+      end
+      
       it "parses gem name without versions" do
         Rcr::GemParser.parse_name("factory-girl").should == "factory-girl"
       end

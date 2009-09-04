@@ -1,87 +1,62 @@
 require 'open-uri'
+require 'rcr/option_parsing'
 require 'rcr/gem_parser'
 
 module Rcr
   class GemSync
-    VERSION = '0.5.13'
     GITHUB = "http://gems.github.com"
     RCR_DEFAULT_GEM_LIST = File.expand_path(File.join(File.dirname(__FILE__), *%w[.. runcoderun_gems.txt]))
     RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"
     RCR_GITHUB_GEM_BLACKLIST = "http://github.com/runcoderun/gem_sync/raw/master/lib/gem_blacklist.txt"
 
-    def self.install_gems(gem_list = nil)
-      gem_list = RCR_DEFAULT_GEM_LIST unless gem_list
-      # puts "gem_list: #{gem_list.inspect}"
-      update_self
-      read_gem_list(gem_list)
-      install_gems_from_list
-      update_gems
-      uninstall_bad_gems(gem_list)
+    attr_accessor :gem_list
+    def initialize(args = ["--github"])
+      options = Rcr::OptionParsing.parse(args)
+      self.gem_list = options[:gem_list] || raise(ArgumentError, "Must provide a gem list source")
     end
     
-    def self.uninstall_bad_gems(gem_list)
-      return unless gem_list == "__from_github__"
-      # puts "Uninstalling any gems on the blacklist..."
-      blacklist = open(RCR_GITHUB_GEM_BLACKLIST).read
-      Rcr::GemParser.convert_gem_list(blacklist).each do |rubygem|
-        cmd = "gem uninstall #{rubygem.name} -I -a -x"
-        cmd << " --version '#{rubygem.version}'" if rubygem.version
-        puts cmd
-        `#{cmd}`
+    def read_gem_list
+      open(gem_list).read
+    end
+    
+    def sync
+      @gem_list = read_gem_list
+      install_gems
+    end
+    
+    def self.sync(args = [])
+      options = Rcr::OptionParsing.parse(args)
+      read_gem_list
+      install_gems
+    end
+    
+    def install_gems
+      gem_list.each do |rubygem|
+        next if installed?(rubygem.name, rubygem.version)
+        install!(rubygem)
       end
     end
     
-    def self.fail_if_gem_list_doesnt_exist(gem_list)
-      raise("gem_list should not be nil") unless gem_list
-      unless gem_list[0..3] == "http"
-        raise("file for gem_list #{gem_list} not found!") unless File.exists?(gem_list) 
-      end
+    def install!(rubygem)
+      install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end
     
-    def self.update_self
-      puts "Updating runcoderun-gem_sync from github..."
-      puts `gem update runcoderun-gem_sync --source #{GITHUB}`
+    def install_from_rubyforge(rubygem)
+      cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
+      cmd << " --version #{rubygem.version}" if rubygem.version
+      run(cmd)
     end
     
-    def self.read_gem_list(gem_list)
-      list = gem_list == "__from_github__" ? RCR_GITHUB_GEM_LIST : gem_list
-      fail_if_gem_list_doesnt_exist(list)
-      # puts "Running gem_sync with list: #{list}."
-      @@gem_list = open(list).read
+    def install_from_github(rubygem)
+      cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
+      cmd << " --version #{rubygem.version}" if rubygem.version
+      cmd << " --source #{GITHUB}"
+      run(cmd)
     end
     
-    def self.update_gems
-      puts "Updating all gems to latest..."
-      puts `gem update`
+    def run(cmd)
+      system(cmd)
     end
     
-    def self.install_gems_from_list
-      Rcr::GemParser.convert_gem_list(@@gem_list).each do |rubygem|
-        if gem_installed?(rubygem.name, rubygem.version)
-          puts "skipping #{rubygem.name} #{rubygem.version} - already installed..."
-          next
-        end
-        cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
-        cmd << " --version #{rubygem.version}" if rubygem.version
-        puts cmd
-        puts `#{cmd}`
-        unless $?.success?
-          cmd << " --source #{GITHUB}"
-          puts "***** WARNING Trying to install gem #{rubygem.name} from github - watch for security issues."
-          puts cmd
-          puts `#{cmd}`
-        end
-      end
-    end
-  
-
-    def self.gem_installed?(name, version)
-      installed_gems.detect {|gem| gem.name == name && gem.version == version}
-    end
-  
-    def self.installed_gems
-      @installed_gems ||= convert_gem_list `gem list`
-    end
-  
   end
 end

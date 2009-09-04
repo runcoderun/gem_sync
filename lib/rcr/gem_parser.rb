@@ -22,7 +22,8 @@ module Rcr
     end
     
     def self.parse_name(string)
-      string.match(/[\w\-_]*/)[0]
+      result = string.gsub(/#.*/, "").match(/[\w\-_]*/)[0]
+      result != "" ? result : nil
     end
     
     def self.parse_versions(string)

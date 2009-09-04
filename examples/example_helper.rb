@@ -6,7 +6,10 @@ gem "spicycode-micronaut"
 gem "mocha"
 require 'micronaut'
 require 'mocha'
+require 'log_buddy'
 require 'rcr/gem_sync'
+
+LogBuddy.init
 
 def not_in_editor?
   ['TM_MODE', 'EMACS', 'VIM'].all? { |k| !ENV.has_key?(k) }

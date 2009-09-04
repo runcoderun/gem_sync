@@ -14,7 +14,7 @@ sudo gem install runcoderun-gem_sync --source http://gems.github.com
 
 (The MIT License)
 
-Copyright (c) 2008 Relevance, Inc.
+Copyright (c) 2009 Relevance, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

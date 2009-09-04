@@ -21,17 +21,16 @@ module Rcr
     
     def sync
       @gem_list = read_gem_list
+      @gems = parse_gems
       install_gems
     end
     
-    def self.sync(args = [])
-      options = Rcr::OptionParsing.parse(args)
-      read_gem_list
-      install_gems
+    def parse_gems
+      @gems = Rcr::GemParser.convert_gem_list(@gem_list)
     end
     
     def install_gems
-      gem_list.each do |rubygem|
+      @gems.each do |rubygem|
         next if installed?(rubygem.name, rubygem.version)
         install!(rubygem)
       end

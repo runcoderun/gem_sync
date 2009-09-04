@@ -20,6 +20,7 @@ describe Rcr::GemSync do
     it "should read gem list, install each gem, ..." do
       gem_sync = Rcr::GemSync.new(["--github"])
       gem_sync.expects(:read_gem_list)
+      gem_sync.expects(:parse_gems)
       gem_sync.expects(:install_gems)
       gem_sync.sync
     end
@@ -28,13 +29,13 @@ describe Rcr::GemSync do
   describe "install_gems" do
     it "should iterate over each gem, and install unless already installed" do
       gem_sync = Rcr::GemSync.new(["--github"])
-      gem1 = stub_everything(:name => "gem1", :version => "1.0.0")
-      gem2 = stub_everything(:name => "gem2", :version => "1.0.0")
-      gem_sync.expects(:read_gem_list).returns([gem1, gem2])
+      gem_sync.expects(:read_gem_list).returns(<<-EOL)
+gem1 (1.0.0)
+gem2 (1.0.0)      
+EOL
       gem_sync.expects(:installed?).with("gem1", "1.0.0").returns(true)
       gem_sync.expects(:installed?).with("gem2", "1.0.0").returns(false)
-      gem_sync.expects(:install!).with(gem1).never
-      gem_sync.expects(:install!).with(gem2)
+      gem_sync.expects(:install!).once
       gem_sync.sync
     end
   end

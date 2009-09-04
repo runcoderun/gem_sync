@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-require File.join(File.dirname(__FILE__), *%w[.. lib rcr gem_sync])
+lib_path = File.join(File.dirname(__FILE__), *%w[.. lib])
+$LOAD_PATH.unshift lib_path unless $LOAD_PATH.include?(lib_path)
 
-gem_list = (ARGV[0] || nil)
-Rcr::GemSync.install_gems gem_list
+require 'rcr/gem_sync'
+
+Rcr::GemSync.new(ARGV).sync

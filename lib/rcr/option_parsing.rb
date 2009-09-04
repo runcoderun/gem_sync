@@ -10,7 +10,7 @@ module Rcr
         opts.banner = "Usage: gem_sync [options]"
 
         opts.on('-p', '--platform [PLATFORM]', 'Specify an optional platform') do |o|
-          options[:platform] = o
+          options[:platform] = o.strip
         end
 
         opts.on('-g', '--github', 'Pull the list of gems to install from github') do |o|
@@ -25,6 +25,7 @@ module Rcr
         opts.on('-n', '--dry-run', 'Do a dry run without executing actions') do |o|
           options[:dry_run] = o
         end
+        
       end.parse!(args)
 
       options

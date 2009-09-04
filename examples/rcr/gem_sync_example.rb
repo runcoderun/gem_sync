@@ -3,17 +3,9 @@ require 'examples/example_helper'
 describe Rcr::GemSync do
 
   describe "creating a gem_sync" do
-    
-    it "requires a gem list" do
-      lambda {
-        Rcr::GemSync.new([])
-      }.should raise_error(ArgumentError)
-      end
-      
-      it "saves github gem list source" do
-        Rcr::GemSync.new(["--github"]).gem_list.should == Rcr::GemSync::RCR_GITHUB_GEM_LIST
-      end
-    
+    it "saves github gem list source" do
+      Rcr::GemSync.new(["--github"]).gem_list.should == Rcr::GemSync::RCR_GITHUB_GEM_LIST
+    end
   end
   
   describe "sync" do
@@ -56,9 +48,26 @@ EOL
       gem_sync.install!(gem)
     end
   end
-  
-  describe "installed?" do
+
+  describe "platform_matches?" do
+    it "should return true if there is no platform" do
+      Rcr::GemSync.new.platform_matches?(OpenStruct.new).should == true
+    end
     
+    it "should return false gem sync and gem platform do not match" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.platform_matches?(OpenStruct.new(:platforms => ["jruby130"])).should == false
+    end
+
+    it "should return true if gem platform and current platform match" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.platform_matches?(OpenStruct.new(:platforms => ["ruby191"])).should == true
+    end
+    
+    it "should return if gem platforms includes the current platform" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.platform_matches?(OpenStruct.new(:platforms => ["jruby130", "ruby191"])).should == true
+    end
   end
   
   describe "read gem list" do

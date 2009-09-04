@@ -12,9 +12,10 @@ module Rcr
     attr_accessor :gem_list
     def initialize(args = ["--github"])
       options = Rcr::OptionParsing.parse(args)
+      @platform = options[:platform]
       @verbose = options[:verbose]
       @dry_run = options[:dry_run]
-      @gem_list = options[:gem_list] || raise(ArgumentError, "Must provide a gem list source")
+      @gem_list = options[:gem_list]
     end
     
     def verbose?
@@ -27,6 +28,14 @@ module Rcr
     
     def read_gem_list
       open(gem_list).read
+    end
+    
+    def platform_matches?(gem)
+      if gem.platforms && @platform
+        gem.platforms.include?(@platform)
+      else
+        true
+      end
     end
     
     def sync
@@ -61,7 +70,6 @@ module Rcr
     def install_from_rubyforge(rubygem)
       cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
       cmd << " --version #{rubygem.version}" if rubygem.version
-      cmd << " --verbose" if verbose?
       run(cmd)
     end
     
@@ -69,7 +77,6 @@ module Rcr
       cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
       cmd << " --version #{rubygem.version}" if rubygem.version
       cmd << " --source #{GITHUB}"
-      cmd << " --verbose" if verbose?
       run(cmd)
     end
     
@@ -78,6 +85,7 @@ module Rcr
         puts cmd
         true
       else
+        puts cmd if verbose?
         system(cmd)
       end
     end

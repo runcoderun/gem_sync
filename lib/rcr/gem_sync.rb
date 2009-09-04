@@ -1,5 +1,5 @@
-require 'ostruct'
 require 'open-uri'
+require 'rcr/gem_parser'
 
 module Rcr
   class GemSync
@@ -23,7 +23,7 @@ module Rcr
       return unless gem_list == "__from_github__"
       # puts "Uninstalling any gems on the blacklist..."
       blacklist = open(RCR_GITHUB_GEM_BLACKLIST).read
-      convert_gem_list(blacklist).each do |rubygem|
+      Rcr::GemParser.convert_gem_list(blacklist).each do |rubygem|
         cmd = "gem uninstall #{rubygem.name} -I -a -x"
         cmd << " --version '#{rubygem.version}'" if rubygem.version
         puts cmd
@@ -56,7 +56,7 @@ module Rcr
     end
     
     def self.install_gems_from_list
-      convert_gem_list(@@gem_list).each do |rubygem|
+      Rcr::GemParser.convert_gem_list(@@gem_list).each do |rubygem|
         if gem_installed?(rubygem.name, rubygem.version)
           puts "skipping #{rubygem.name} #{rubygem.version} - already installed..."
           next
@@ -74,34 +74,7 @@ module Rcr
       end
     end
   
-    def self.convert_gem_list(string)
-      gems = []
-      string.each do |line|
-        name = parse_name(line)
-        next unless name
-        versions = parse_versions(line)
-        if versions.empty?
-          gems << OpenStruct.new(:name => name)
-        else 
-          versions.each do |version|
-            gems << OpenStruct.new(:name => name, :version => version.strip)
-          end
-        end
-      end
-      gems
-    end
-    
-    def self.parse_name(string)
-      string.match(/[\w\-_]*/)[0]
-    end
-    
-    def self.parse_versions(string)
-      output = string.scan(/\((.*?)\)/).flatten
-      output = output.map {|s| s.split(",") }.flatten
-      output = output.map {|s| s.strip}
-      output
-    end
-  
+
     def self.gem_installed?(name, version)
       installed_gems.detect {|gem| gem.name == name && gem.version == version}
     end

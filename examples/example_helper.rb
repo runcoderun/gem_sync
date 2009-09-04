@@ -6,6 +6,7 @@ gem "spicycode-micronaut"
 gem "mocha"
 require 'micronaut'
 require 'mocha'
+require 'rcr/gem_sync'
 
 def not_in_editor?
   ['TM_MODE', 'EMACS', 'VIM'].all? { |k| !ENV.has_key?(k) }

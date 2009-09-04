@@ -50,7 +50,8 @@ module Rcr
     
     def install_gems
       @gems.each do |rubygem|
-        next if installed?(rubygem.name, rubygem.version)
+        next unless platform_matches?(rubygem)
+        next if installed?(rubygem)
         install!(rubygem)
       end
     end

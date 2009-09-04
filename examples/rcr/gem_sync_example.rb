@@ -25,9 +25,17 @@ describe Rcr::GemSync do
 gem1 (1.0.0)
 gem2 (1.0.0)      
 EOL
-      gem_sync.expects(:installed?).with("gem1", "1.0.0").returns(true)
-      gem_sync.expects(:installed?).with("gem2", "1.0.0").returns(false)
+      gem_sync.stubs(:installed?).returns(true, false)
       gem_sync.expects(:install!).once
+      gem_sync.sync
+    end
+    
+    it "shoud do nothing if the platform does not match" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.expects(:read_gem_list).returns(<<-EOL)
+gem1 (1.0.0) +jruby130
+EOL
+      gem_sync.expects(:install!).never
       gem_sync.sync
     end
   end

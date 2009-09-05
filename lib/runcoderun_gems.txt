@@ -36,11 +36,11 @@ chronic
 coderay
 colors
 configatron (2.2.2, 2.1.5)
-configuration (0.0.5)
+configuration
 context
 crack
 csv-mapper (0.0.3)
-cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9, 0.3.11, 0.3.0)
+cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9)
 curb +ruby_186 +ruby_191
 daemons
 dancroak-clearance
@@ -106,7 +106,7 @@ httpauth
 httpclient
 ianwhite-garlic
 icalendar (1.1.0, 1.0.2)
-image_science (1.1.3) +ruby_186 +ruby_191
+image_science +ruby_186 +ruby_191
 innate
 javan-whenever
 jeremymcanally-context
@@ -124,7 +124,7 @@ kematzy-sinatra-cache
 lame_encoder
 launchy (0.3.3, 0.3.2)
 less
-libxml-ruby (1.1.3, 0.9.8, 0.8.3) +ruby_186 +ruby_191
+libxml-ruby +ruby_186 +ruby_191
 Linguistics
 liquid
 locale

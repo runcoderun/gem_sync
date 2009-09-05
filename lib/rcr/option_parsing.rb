@@ -18,7 +18,7 @@ module Rcr
           options[:gem_list] = Rcr::GemSync::RCR_GITHUB_GEM_LIST
         end
         
-        opts.on('-v', '--version', 'Run in verbose mode') do |o|
+        opts.on('-v', '--verbose', 'Run in verbose mode') do |o|
           options[:verbose] = o
         end
         

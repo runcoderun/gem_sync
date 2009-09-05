@@ -5,7 +5,7 @@ module Rcr
     
     def self.convert_gem_list(string)
       gems = []
-      string.each do |line|
+      string.each_line do |line|
         name = parse_name(line)
         next unless name
         versions = parse_versions(line)

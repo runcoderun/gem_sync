@@ -86,15 +86,4 @@ EOL
     end
   end
   
-  describe "failed installation" do
-    xit "should skip the gem and move on if failed due to permission denied" do
-      out = "Permission denied - /opt/local/lib/ruby/gems/1.8/cache/activesupport-1.4.4.gem"
-    end
-    
-    xit "logs connection refused and skips gem, usually due to firewall blocking or gem mirrir is down"
-    
-    xit "should try to install from github if gem was not found in default source(s)" do
-    end
-  end
-  
 end

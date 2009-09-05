@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gem_sync}
-  s.version = "1.1.1"
+  s.version = "1.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rob Sanheim"]
-  s.date = %q{2009-09-04}
+  s.date = %q{2009-09-05}
   s.default_executable = %q{gem_sync}
   s.description = %q{Tool to install rubygems for RunCodeRun, though it could be used to bootstrap your own machines as well.}
   s.email = %q{rob@runcoderun.com}

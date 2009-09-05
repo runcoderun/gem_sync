@@ -9,7 +9,6 @@ module Rcr
     RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"
     RCR_GITHUB_GEM_BLACKLIST = "http://github.com/runcoderun/gem_sync/raw/master/lib/gem_blacklist.txt"
 
-    attr_accessor :gem_list
     def initialize(args = ["--github"])
       options = Rcr::OptionParsing.parse(args)
       @platform = options[:platform]
@@ -17,6 +16,12 @@ module Rcr
       @dry_run = options[:dry_run]
       @gem_list = options[:gem_list]
       system("gem env") if verbose?
+    end
+    
+    def sync
+      @gem_list = read_gem_list
+      @gems = parse_gems
+      install_gems
     end
     
     def verbose?
@@ -28,7 +33,7 @@ module Rcr
     end
     
     def read_gem_list
-      open(gem_list).read
+      open(@gem_list).read
     end
     
     def platform_matches?(gem)
@@ -39,22 +44,18 @@ module Rcr
       end
     end
     
-    def sync
-      @gem_list = read_gem_list
-      @gems = parse_gems
-      install_gems
-    end
-    
     def parse_gems
       @gems = Rcr::GemParser.convert_gem_list(@gem_list)
     end
     
     def install_gems
-      @gems.each do |rubygem|
-        next unless platform_matches?(rubygem)
-        next if installed?(rubygem)
-        install!(rubygem)
-      end
+      @gems.each { |rubygem| install!(rubygem) }
+    end
+
+    def install!(rubygem)
+      return unless platform_matches?(rubygem)
+      return if installed?(rubygem)
+      install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end
     
     def installed?(rubygem)
@@ -63,10 +64,6 @@ module Rcr
     
     def installed_gems
       @installed_gems ||= Rcr::GemParser.convert_gem_list(`gem list`)
-    end
-    
-    def install!(rubygem)
-      install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end
     
     def install_from_rubyforge(rubygem)

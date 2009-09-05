@@ -41,6 +41,12 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
     end
 
     describe "parsing platforms" do
+      it "should return nil for no platforms" do
+        list = %[rambow_likes_gerbils (<= 7.3.2)]
+        gem = Rcr::GemParser.convert_gem_list(list).first
+        gem.platforms.should be_nil
+      end
+      
       it "is parses a single platform" do
         list = %[rambow_likes_gerbils (<= 7.3.2) +ruby186]
         gem = Rcr::GemParser.convert_gem_list(list).first

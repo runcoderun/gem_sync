@@ -2,12 +2,6 @@ require 'examples/example_helper'
 
 describe Rcr::GemSync do
 
-  describe "creating a gem_sync" do
-    it "saves github gem list source" do
-      Rcr::GemSync.new(["--github"]).gem_list.should == Rcr::GemSync::RCR_GITHUB_GEM_LIST
-    end
-  end
-  
   describe "sync" do
     it "should read gem list, install each gem, ..." do
       gem_sync = Rcr::GemSync.new(["--github"])
@@ -19,14 +13,22 @@ describe Rcr::GemSync do
   end
   
   describe "install_gems" do
-    it "should iterate over each gem, and install unless already installed" do
+    it "should iterate over each gem and install!" do
       gem_sync = Rcr::GemSync.new(["--github"])
       gem_sync.expects(:read_gem_list).returns(<<-EOL)
 gem1 (1.0.0)
 gem2 (1.0.0)      
 EOL
-      gem_sync.stubs(:installed?).returns(true, false)
-      gem_sync.expects(:install!).once
+      gem_sync.expects(:run).times(2).returns(true)
+      gem_sync.sync
+    end
+    
+    it "should install gems that have no platform, even when gem sync platform is specified" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.expects(:read_gem_list).returns(<<-EOL)
+gem1 (1.0.0)
+EOL
+      gem_sync.expects(:run).once.returns(true)
       gem_sync.sync
     end
     
@@ -35,12 +37,20 @@ EOL
       gem_sync.expects(:read_gem_list).returns(<<-EOL)
 gem1 (1.0.0) +jruby130
 EOL
-      gem_sync.expects(:install!).never
+      gem_sync.expects(:run).never
       gem_sync.sync
     end
   end
   
   describe "install!" do
+    it "should skip if already installed" do
+      gem = stub_everything("gem", :name => "foo")
+      gem_sync = Rcr::GemSync.new
+      gem_sync.expects(:installed?).with(gem).returns(true)
+      gem_sync.expects(:run).never
+      gem_sync.install!(gem)
+    end
+    
     it "should try installing as rubyforge first" do
       gem = OpenStruct.new(:name => "foo", :version => "1.0.0")
       gem_sync = Rcr::GemSync.new
@@ -60,6 +70,11 @@ EOL
   describe "platform_matches?" do
     it "should return true if there is no platform" do
       Rcr::GemSync.new.platform_matches?(OpenStruct.new).should == true
+    end
+    
+    it "should return true if gem sync platform is specified and gem has no platform" do
+      gem_sync = Rcr::GemSync.new(["-p ruby191"])
+      gem_sync.platform_matches?(OpenStruct.new).should == true
     end
     
     it "should return false gem sync and gem platform do not match" do

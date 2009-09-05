@@ -34,7 +34,8 @@ module Rcr
     end
   
     def self.parse_platforms(string)
-      string.scan(/\+[\w-]+\b/).map! { |platform| platform.gsub!('+', '') }
+      platforms = string.scan(/\+[\w-]+\b/).map! { |platform| platform.gsub!('+', '') }
+      platforms.empty? ? nil : platforms
     end
     
     

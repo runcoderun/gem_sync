@@ -21,7 +21,7 @@ arrayfields (4.7.3, 4.6.0)
 authlogic
 aws-s3
 bacon
-bcrypt-ruby (2.0.5, 2.0.3)
+bcrypt-ruby (2.0.5, 2.0.3) +ruby_186
 beanstalk-client
 bj
 bmabey-email_spec

@@ -269,7 +269,7 @@ tagz
 technicalpickles-echoe
 technicalpickles-jeweler
 term-ansicolor
-termios
+termios +ruby_186 # 0.9.4 gem does not build against 1.9.1 -- looks like it needs to be built from source
 test-spec
 test-unit (1.2.3) +ruby_191
 thin

@@ -38,6 +38,14 @@ ZenTest (3.10.0, 3.9.2, 3.9.1, 3.8.0, 3.6.0)]
         gems = Rcr::GemParser.convert_gem_list(list)
         gems.first.version.should == '<= 0.9.8'
       end
+      
+      it "parses gem list" do
+        list = %[wirble (0.1.2) +ruby_186 # here is a gem]
+        gem = Rcr::GemParser.convert_gem_list(list).first
+        gem.name.should == "wirble"
+        gem.version.should == "0.1.2"
+        gem.platforms.should == ["ruby_186"]
+      end
     end
 
     describe "parsing platforms" do

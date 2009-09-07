@@ -255,7 +255,6 @@ sinatra
 spicycode-micronaut
 spicycode-micronaut-rails
 spork
-sql-parser
 sqlite3-ruby (1.2.4, 1.2.3, 1.2.1) +ruby_186 +ruby_191
 starling
 starling-starling
@@ -297,6 +296,5 @@ xmlelements
 xml-simple
 yajl-ruby
 yard
-vizier
 ym4r
 ZenTest (4.0.0, 3.11.1, 3.10.0)

@@ -88,7 +88,7 @@ EOL
     it "should attempt to install if there are dashes in the name" do
       gem = fake_gem("user-gem", '1.0.0')
       gem_sync = Rcr::GemSync.new
-      gem_sync.expects(:run).never
+      gem_sync.expects(:run).with(includes("user-gem")).once
       gem_sync.install_from_github(gem)
     end
   end

@@ -70,7 +70,7 @@ facon
 faker
 fakeweb
 fastercsv (1.4.0, 1.2.3)
-fastthread (1.0.7, 1.0.1)
+fastthread (1.0.7, 1.0.1) +ruby_186
 fattr
 feed-normalizer
 feedvalidator
@@ -163,7 +163,7 @@ mongrel
 mosquito (0.1.4, 0.1.3)
 mwmitchell-rsolr
 mwmitchell-material_girl
-mysql (2.7) +ruby_186 +ruby_191
+mysql +ruby_186 +ruby_191
 nagoro
 net-ssh (2.0.11, 2.0.4)
 newgem
@@ -199,7 +199,8 @@ rake (0.8.7, 0.8.4, 0.8.3)
 railroad
 rc-rest
 rdiscount
-RedCloth (4.1.9, 4.1.1)
+RedCloth (4.1.9, 4.1.1) +ruby_186
+RedCloth  # latest version _should_ work on 191 and 186
 redgreen
 reek (1.1.3)
 relevance-cap_gun
@@ -240,7 +241,7 @@ rubygems-update
 RubyInline (3.8.1, 3.7.0)
 rubyzip
 ruby_parser (2.0.3, 2.0.2)
-ruby-xslt
+ruby-xslt +ruby_186
 rubyist-aasm 
 runcoderun-configatron
 runcoderun-gem_sync

@@ -26,7 +26,6 @@ beanstalk-client
 bj
 bmabey-email_spec
 builder (2.1.2)
-cache_money
 camping (1.5)
 capistrano
 capistrano-ext
@@ -34,7 +33,6 @@ cgi_multipart_eof_fix (2.5.0)
 chrisk-fakeweb
 chronic
 coderay
-colors
 configatron (2.2.2, 2.1.5)
 configuration
 context
@@ -59,7 +57,7 @@ dm-tags (0.9.11)
 dm-validations (0.9.11)
 dnsruby (1.26, 1.24, 1.2)
 do_mysql +ruby_186 +ruby_191
-echoe (3.1.1, 3.0.2, 3)
+echoe
 editalign
 erubis
 eventmachine

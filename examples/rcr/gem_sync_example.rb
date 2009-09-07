@@ -2,6 +2,10 @@ require 'examples/example_helper'
 
 describe Rcr::GemSync do
 
+  def fake_gem(name, version)
+    OpenStruct.new(:name => name, :version => version)
+  end
+  
   describe "sync" do
     it "should read gem list, install each gem, ..." do
       gem_sync = Rcr::GemSync.new(["--github"])
@@ -43,10 +47,6 @@ EOL
   end
   
   describe "installed?" do
-    def fake_gem(name, version)
-      OpenStruct.new(:name => name, :version => version)
-    end
-    
     describe "is rspec installed?" do
       it "should be installed if any version of rspec is installed" do
         gem_sync = Rcr::GemSync.new
@@ -74,6 +74,15 @@ EOL
         gem_sync.stubs(:installed_gems).returns([fake_gem('rspec', '1.2.6'), fake_gem('rspec', '1.3.0')])    
         gem_sync.installed?(fake_gem('rspec', '1.2.3')).should be_false
       end
+    end
+  end
+  
+  describe "install_from_github" do
+    it "should not attempt to install if there are no dashes in the name" do
+      gem = fake_gem("somegem", '1.0.0')
+      gem_sync = Rcr::GemSync.new
+      gem_sync.expects(:run).never
+      gem_sync.install_from_github(gem)
     end
   end
   

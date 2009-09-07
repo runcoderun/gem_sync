@@ -82,6 +82,7 @@ module Rcr
     end
     
     def install_from_github(rubygem)
+      return unless rubygem.name.include?("-")
       cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
       cmd << " --version #{rubygem.version}" if rubygem.version
       cmd << " --source #{GITHUB}"

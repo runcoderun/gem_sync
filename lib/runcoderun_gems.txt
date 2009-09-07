@@ -199,7 +199,7 @@ rake (0.8.7, 0.8.4, 0.8.3)
 railroad
 rc-rest
 rdiscount
-RedCloth (4.1.9, 4.1.1, 4.0.3, 4.0.1)
+RedCloth (4.1.9, 4.1.1)
 redgreen
 reek (1.1.3)
 relevance-cap_gun

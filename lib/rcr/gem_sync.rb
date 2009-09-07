@@ -58,8 +58,17 @@ module Rcr
       install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end
     
-    def installed?(rubygem)
-      installed_gems.detect {|gem| gem.name == rubygem.name && gem.version == rubygem.version}
+    def gem_installed?(name)
+      installed_gems.any? { |installed| installed.name == name }
+    end
+    
+    def gem_version_installed?(version)
+      return true if version.nil?
+      installed_gems.any? { |installed| installed.version == version }
+    end
+    
+    def installed?(requested)
+      gem_installed?(requested.name) && gem_version_installed?(requested.version)
     end
     
     def installed_gems

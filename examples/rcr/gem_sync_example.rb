@@ -42,6 +42,41 @@ EOL
     end
   end
   
+  describe "installed?" do
+    def fake_gem(name, version)
+      OpenStruct.new(:name => name, :version => version)
+    end
+    
+    describe "is rspec installed?" do
+      it "should be installed if any version of rspec is installed" do
+        gem_sync = Rcr::GemSync.new
+        gem_sync.stubs(:installed_gems).returns([fake_gem('rspec', '1.2.0')])
+        gem_sync.installed?(OpenStruct.new(:name => "rspec")).should be_true
+      end
+      
+      it "should not be installed if rspec is not installed" do
+        gem_sync = Rcr::GemSync.new
+        gem_sync.stubs(:installed_gems).returns([fake_gem('shoulda', '1.2.0')])
+        gem_sync.installed?(OpenStruct.new(:name => "rspec")).should be_false
+        gem_sync.installed?(OpenStruct.new(:name => "rspec", :version => '1.2.0')).should be_false
+      end
+    end
+    
+    describe "is rspec v1.2.3 installed?" do
+      it "should be installed if rspec v1.2.3 is installed" do
+        gem_sync = Rcr::GemSync.new
+        gem_sync.stubs(:installed_gems).returns([fake_gem('rspec', '1.2.3'), fake_gem('rspec', '1.3.0')])    
+        gem_sync.installed?(fake_gem('rspec', '1.2.3')).should be_true
+      end
+      
+      it "should not be installed if rspec is installed, but v1.2.3 is not" do
+        gem_sync = Rcr::GemSync.new
+        gem_sync.stubs(:installed_gems).returns([fake_gem('rspec', '1.2.6'), fake_gem('rspec', '1.3.0')])    
+        gem_sync.installed?(fake_gem('rspec', '1.2.3')).should be_false
+      end
+    end
+  end
+  
   describe "install!" do
     it "should skip if already installed" do
       gem = stub_everything("gem", :name => "foo")

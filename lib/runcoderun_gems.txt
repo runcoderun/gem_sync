@@ -216,7 +216,6 @@ relevance-test-spec
 remarkable
 remarkable_activerecord
 remarkable_rails
-remarkably
 rest-client (0.9.2, 0.7)
 right_aws
 rio
@@ -229,7 +228,7 @@ rspec (1.2.7, 1.2.4, 1.1.8, 1.1.4)
 rspec-rails (1.2.7.1, 1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rspec_hpricot_matchers
 rubigen
-ruby-aaws
+ruby-aaws +ruby_191  # ruby 187 and above only
 ruby-debug
 ruby-hmac (0.3.2)
 ruby-json

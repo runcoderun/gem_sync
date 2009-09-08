@@ -265,7 +265,6 @@ systemu (1.2.0)
 system_timer +ruby_186 +ruby_191
 taf2-curb
 tagz
-technicalpickles-echoe
 technicalpickles-jeweler
 term-ansicolor
 termios +ruby_186 # 0.9.4 gem does not build against 1.9.1 -- looks like it needs to be built from source

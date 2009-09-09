@@ -5,6 +5,14 @@ describe Rcr::GemSync do
   def fake_gem(name, version)
     OpenStruct.new(:name => name, :version => version)
   end
+
+  describe "init" do
+    before { Rcr::GemSync.any_instance.stubs(:system) }
+    it "inits with options from opt parser" do
+      gem_sync = Rcr::GemSync.new(["--verbose"])
+      gem_sync.should be_verbose
+    end
+  end
   
   describe "sync" do
     it "should read gem list, install each gem, ..." do

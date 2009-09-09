@@ -9,12 +9,12 @@ module Rcr
     RCR_GITHUB_GEM_LIST =      "http://github.com/runcoderun/gem_sync/raw/master/lib/runcoderun_gems.txt"
     RCR_GITHUB_GEM_BLACKLIST = "http://github.com/runcoderun/gem_sync/raw/master/lib/gem_blacklist.txt"
 
+    attr_reader :platform, :gem_list
+    
     def initialize(args = ["--github"])
-      options = Rcr::OptionParsing.parse(args)
-      @platform = options[:platform]
-      @verbose = options[:verbose]
-      @dry_run = options[:dry_run]
-      @gem_list = options[:gem_list]
+      @options = Rcr::OptionParsing.parse(args)
+      @platform = @options[:platform]
+      @gem_list = @options[:gem_list]
       system("gem env") if verbose?
     end
     
@@ -25,11 +25,15 @@ module Rcr
     end
     
     def verbose?
-      @verbose
+      @options[:verbose]
+    end
+    
+    def verbose_gem?
+      @options[:verbose_gem]
     end
     
     def dry_run?
-      @dry_run
+      @options[:dry_run]
     end
     
     def read_gem_list
@@ -37,15 +41,15 @@ module Rcr
     end
     
     def platform_matches?(gem)
-      if gem.platforms && @platform
-        gem.platforms.include?(@platform)
+      if gem.platforms && platform
+        gem.platforms.include?(platform)
       else
         true
       end
     end
     
     def parse_gems
-      @gems = Rcr::GemParser.convert_gem_list(@gem_list)
+      @gems = Rcr::GemParser.convert_gem_list(gem_list)
     end
     
     def install_gems
@@ -78,6 +82,7 @@ module Rcr
     def install_from_rubyforge(rubygem)
       cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
       cmd << " --version #{rubygem.version}" if rubygem.version
+      cmd << " --verbose" if verbose_gem?
       run(cmd)
     end
     
@@ -85,6 +90,7 @@ module Rcr
       return unless rubygem.name.include?("-")
       cmd = "gem install #{rubygem.name} --no-ri --no-rdoc"
       cmd << " --version #{rubygem.version}" if rubygem.version
+      cmd << " --verbose" if verbose_gem?
       cmd << " --source #{GITHUB}"
       run(cmd)
     end

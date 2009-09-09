@@ -22,6 +22,10 @@ module Rcr
           options[:verbose] = o
         end
         
+        opts.on('--verbose-gem', "Be verbose when calling gem commands") do |o|
+          options[:verbose_gem] = o
+        end
+        
         opts.on('-n', '--dry-run', 'Do a dry run without executing actions') do |o|
           options[:dry_run] = o
         end

@@ -19,4 +19,16 @@ describe Rcr::OptionParsing do
     end
   end
   
+  describe "verbose" do
+    it "can be extra verbose" do
+      opts = Rcr::OptionParsing.parse(["--verbose-gem"])
+      opts[:verbose_gem].should be_true
+    end
+    
+    it "can be verbose" do
+      opts = Rcr::OptionParsing.parse(["-v"])
+      opts[:verbose].should be_true
+    end
+  end
+  
 end

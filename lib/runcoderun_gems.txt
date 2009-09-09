@@ -23,6 +23,7 @@ aws-s3
 bacon
 bcrypt-ruby (2.0.5, 2.0.3) +ruby_186
 beanstalk-client
+bmabey-fakefs
 BRIMIL01-meetup_api  
 binarylogic-authlogic
 bj

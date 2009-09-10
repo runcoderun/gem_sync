@@ -24,7 +24,7 @@ bacon
 bcrypt-ruby (2.0.5, 2.0.3) +ruby_186
 beanstalk-client
 bmabey-fakefs
-BRIMIL01-meetup_api  
+BRIMIL01-meetup_api +ruby_186  # depends on json, which doesn't build on ruby19
 binarylogic-authlogic
 bj
 bmabey-email_spec

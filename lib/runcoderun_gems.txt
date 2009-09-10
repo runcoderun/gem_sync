@@ -183,6 +183,7 @@ patron
 orderedhash (0.0.6, 0.0.4)
 packet (0.1.15, 0.1.14)
 ParseTree (3.0.3, 2.2.0)
+pauldix-feedzirra
 pauldix-sax-machine
 pdf-writer (1.1.8)
 peterwald-git (1.1.4)

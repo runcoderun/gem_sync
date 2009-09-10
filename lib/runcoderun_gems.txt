@@ -113,6 +113,7 @@ jeremymcanally-context
 jeremymcanally-matchy
 jeremymcanally-pending
 jeremymcanally-stump
+jferris-mocha (0.9.5.0.1241126838)
 jnunemaker-twitter
 jruby-openssl +jruby
 jruby-rcov +jruby

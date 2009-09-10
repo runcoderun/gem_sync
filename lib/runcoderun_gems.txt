@@ -203,6 +203,7 @@ rake (0.8.7, 0.8.4, 0.8.3)
 railroad
 rc-rest
 rdiscount
+rdoc
 RedCloth (4.1.9, 4.1.1) +ruby_186
 RedCloth  # latest version _should_ work on 191 and 186
 redgreen
@@ -249,6 +250,7 @@ runcoderun-configatron
 runcoderun-gem_sync
 ruport
 schacon-git
+sdoc
 selenium-client
 session
 sexp_processor (3.0.1)

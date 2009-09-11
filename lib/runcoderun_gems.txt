@@ -28,6 +28,7 @@ BRIMIL01-meetup_api +ruby_186  # depends on json, which doesn't build on ruby19
 binarylogic-authlogic
 bj
 bmabey-email_spec
+botanicus-path
 builder (2.1.2)
 camping (1.5)
 capistrano

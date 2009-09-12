@@ -39,6 +39,7 @@ coderay
 configatron (2.2.2, 2.1.5)
 configuration
 context
+couchrest
 crack
 csv-mapper (0.0.3)
 cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9)

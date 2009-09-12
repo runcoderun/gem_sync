@@ -28,6 +28,7 @@ BRIMIL01-meetup_api +ruby_186  # depends on json, which doesn't build on ruby19
 binarylogic-authlogic
 bj
 bmabey-email_spec
+botanicus-path
 builder (2.1.2)
 camping (1.5)
 capistrano
@@ -98,6 +99,7 @@ haml (2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
 happymapper
 hashtostruct
 heckle (1.4.2, 1.4.1)
+heroku
 highline (1.5.0, 1.4.0)
 hoe (1.12.2, 1.8.3, 1.8.2, 1.7.0)
 hpricot +ruby_186 +ruby_191
@@ -114,6 +116,7 @@ jeremymcanally-context
 jeremymcanally-matchy
 jeremymcanally-pending
 jeremymcanally-stump
+jferris-mocha (0.9.5.0.1241126838)
 jnunemaker-twitter
 jruby-openssl +jruby
 jruby-rcov +jruby
@@ -203,6 +206,7 @@ rake (0.8.7, 0.8.4, 0.8.3)
 railroad
 rc-rest
 rdiscount
+rdoc
 RedCloth (4.1.9, 4.1.1) +ruby_186
 RedCloth  # latest version _should_ work on 191 and 186
 redgreen
@@ -249,6 +253,7 @@ runcoderun-configatron
 runcoderun-gem_sync
 ruport
 schacon-git
+sdoc
 selenium-client
 session
 sexp_processor (3.0.1)

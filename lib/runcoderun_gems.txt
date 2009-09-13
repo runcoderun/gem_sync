@@ -26,6 +26,7 @@ beanstalk-client
 bmabey-fakefs
 BRIMIL01-meetup_api +ruby_186  # depends on json, which doesn't build on ruby19
 binarylogic-authlogic
+binarylogic-searchlogic
 bj
 bmabey-email_spec
 botanicus-path
@@ -171,6 +172,7 @@ mwmitchell-rsolr
 mwmitchell-material_girl
 mysql +ruby_186 +ruby_191
 nagoro
+notahat-machinist  
 net-ssh (2.0.11, 2.0.4)
 newgem
 nokogiri (1.3.2)
@@ -186,6 +188,7 @@ opscode-mixlib-log (1.0.3)
 patron
 orderedhash (0.0.6, 0.0.4)
 packet (0.1.15, 0.1.14)
+paperclip
 ParseTree (3.0.3, 2.2.0)
 pauldix-feedzirra
 pauldix-sax-machine

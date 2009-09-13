@@ -179,7 +179,6 @@ nokogiri (1.3.2)
 oauth
 obsidian
 ohai
-oniguruma +ruby_186
 open4
 opscode-ohai
 opscode-mixlib-cli (1.0.4)

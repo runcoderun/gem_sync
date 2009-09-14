@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'rake'
 require 'micronaut/rake_task'
 
@@ -35,4 +34,8 @@ task :console do
   sh %(irb -r lib/rcr/gem_sync.rb)
 end
 
-task :default => [:check_dependencies, :examples]
+if RUBY_VERSION =~ /1.9/
+  task :default => :examples
+else
+  task :default => [:check_dependencies, :examples]
+end

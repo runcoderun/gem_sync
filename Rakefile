@@ -39,8 +39,6 @@ task :console do
   sh %(irb -r lib/rcr/gem_sync.rb)
 end
 
-p RUBY_VERSION
-p RUBY_VERSION =~ /1.9/
 if RUBY_VERSION =~ /1.9/
   task :default => :examples
 else

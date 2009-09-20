@@ -19,8 +19,7 @@ Gem::Specification.new do |s|
      "README.txt"
   ]
   s.files = [
-    ".gitignore",
-     "History.txt",
+    "History.txt",
      "LICENSE",
      "Manifest",
      "Manifest.txt",

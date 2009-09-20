@@ -10,7 +10,7 @@ begin
     gem.homepage = "http://github.com/runcoderun/gem_sync"
     gem.authors = ["Rob Sanheim"]
     gem.add_development_dependency "micronaut"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files.exclude(".gitignore")
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"

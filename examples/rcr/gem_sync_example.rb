@@ -154,16 +154,17 @@ EOL
   
   describe "read gem list" do
     it "should read the gem list" do
-      gem_sync = Rcr::GemSync.new(["--github"])
+      gem_sync = Rcr::GemSync.new(["--github"]) 
       gem_sync.expects(:open).with(Rcr::GemSync::RCR_GITHUB_GEM_LIST).returns(StringIO.new)
       gem_sync.read_gem_list
     end
   end
   
-  describe "wtf" do
-    it "installs versions of stuff" do
+  describe "regressions" do
+    it "installs specific version of rails, even if there is that specific version installed for a different gem" do
       gem_sync = Rcr::GemSync.new(["--github"])
       installed_gems = <<EOL
+some-other-gem (2.2.2)
 rails (2.3.4, 2.3.2, 2.1.2, 2.1.1, 2.1.0, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.2, 1.2.1)
 relevance-multi_rails (0.0.8)
 remarkable_rails (3.1.10)

@@ -62,17 +62,17 @@ module Rcr
       install_from_rubyforge(rubygem) || install_from_github(rubygem)
     end
     
-    def gem_installed?(name)
-      installed_gems.any? { |installed| installed.name == name }
+    def gem_installed?(requested)
+      installed_gems.any? { |installed| installed.name == requested.name }
     end
     
-    def gem_version_installed?(version)
-      return true if version.nil?
-      installed_gems.any? { |installed| installed.version == version }
+    def gem_version_installed?(requested)
+      return true if requested.version.nil?
+      installed_gems.select { |gem| gem.name == requested.name }.any? { |gem| gem.version == requested.version }
     end
     
     def installed?(requested)
-      result = gem_installed?(requested.name) && gem_version_installed?(requested.version)
+      result = gem_installed?(requested) && gem_version_installed?(requested)
       puts "Skipping installation of #{requested.name} #{requested.version}, as its already installed" if verbose? && result
       result
     end

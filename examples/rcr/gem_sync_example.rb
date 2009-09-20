@@ -160,4 +160,24 @@ EOL
     end
   end
   
+  describe "wtf" do
+    it "installs versions of stuff" do
+      gem_sync = Rcr::GemSync.new(["--github"])
+      installed_gems = <<EOL
+rails (2.3.4, 2.3.2, 2.1.2, 2.1.1, 2.1.0, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.2, 1.2.1)
+relevance-multi_rails (0.0.8)
+remarkable_rails (3.1.10)
+rspec-rails (1.2.7.1, 1.2.4, 1.2.2, 1.1.12, 1.1.11)
+spicycode-micronaut-rails (0.3.2)
+EOL
+      gem_sync.stubs(:installed_gem_list).returns(installed_gems)
+      gem_sync.stubs(:read_gem_list).returns("rails (2.3.4, 2.3.3, 2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0)")
+      gem_sync.stubs(:run)
+      gem_sync.expects(:run).with(all_of(includes("rails"), includes("version 2.3.3")))
+      gem_sync.expects(:run).with(all_of(includes("rails"), includes("version 2.3.1")))
+      gem_sync.expects(:run).with(all_of(includes("rails"), includes("version 2.2.2")))
+      gem_sync.sync
+    end
+  end
+  
 end

@@ -72,11 +72,17 @@ module Rcr
     end
     
     def installed?(requested)
-      gem_installed?(requested.name) && gem_version_installed?(requested.version)
+      result = gem_installed?(requested.name) && gem_version_installed?(requested.version)
+      puts "Skipping installation of #{requested.name} #{requested.version}, as its already installed" if verbose? && result
+      result
     end
     
     def installed_gems
-      @installed_gems ||= Rcr::GemParser.convert_gem_list(`gem list`)
+      @installed_gems ||= Rcr::GemParser.convert_gem_list(installed_gem_list)
+    end
+    
+    def installed_gem_list
+      `gem list`
     end
     
     def install_from_rubyforge(rubygem)

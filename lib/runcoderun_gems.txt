@@ -155,6 +155,7 @@ merb-manage (0.4)
 merb-more (0.9.9)
 metaid (1.0)
 mhennemeyer-output_catcher
+micronaut
 mime-types (1.16, 1.15)
 mislav-hanna
 mislav-will_paginate (2.3.11, 2.3.4)

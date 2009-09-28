@@ -45,7 +45,7 @@ context
 couchrest
 crack
 csv-mapper (0.0.3)
-cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9, 0.2.3)
+cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9, 0.3.0, 0.2.3)
 curb +ruby_186 +ruby_191
 daemons
 dancroak-clearance

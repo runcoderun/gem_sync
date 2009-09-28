@@ -289,7 +289,7 @@ technicalpickles-jeweler
 term-ansicolor
 termios +ruby_186 # 0.9.4 gem does not build against 1.9.1 -- looks like it needs to be built from source
 test-spec
-test-unit (2.0.3, 1.2.3) +ruby_186 +ruby_191
+test-unit (1.2.3) +ruby_191
 thin
 thoughtbot-clearance
 thoughtbot-factory_girl (1.2.1, 1.1.3)

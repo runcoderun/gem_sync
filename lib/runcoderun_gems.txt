@@ -252,6 +252,7 @@ ruby-hmac (0.3.2)
 ruby-json
 ruby-net-ldap
 ruby-openid
+ruby-stemmer
 ruby2ruby (1.2.2, 1.1.9)
 rubyforge (1.0.3, 1.0.2, 1.0.1, 1.0.0)
 rubygems-update

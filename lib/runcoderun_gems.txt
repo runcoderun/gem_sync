@@ -193,6 +193,7 @@ mojombo-grit (1.1.1, 0.9.4)
 mojombo-jekyll
 moneta
 money
+mongomapper
 mongrel
 mosquito (0.1.4, 0.1.3)
 mperham-memcache-client (1.7.2)

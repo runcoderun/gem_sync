@@ -39,6 +39,7 @@ calendar_date_select
 camping (1.5)
 capistrano
 capistrano-ext
+carlosbrando-remarkable
 cgi_multipart_eof_fix (2.5.0)
 chrisk-fakeweb
 chronic
@@ -150,6 +151,7 @@ kematzy-sinatra-cache
 lame_encoder
 launchy (0.3.3, 0.3.2)
 less
+levenshtein
 libxml-ruby +ruby_186 +ruby_191
 Linguistics
 liquid
@@ -193,6 +195,7 @@ mojombo-grit (1.1.1, 0.9.4)
 mojombo-jekyll
 moneta
 money
+mongomapper
 mongrel
 mosquito (0.1.4, 0.1.3)
 mperham-memcache-client (1.7.2)
@@ -207,6 +210,7 @@ newgem
 newrelic_rpm
 netguru-aasm
 netguru-hominid 
+nex3-ruby-progressbar
 nokogiri (1.3.3, 1.3.2, 1.2.3)
 oauth
 obsidian
@@ -247,7 +251,7 @@ rbtree (0.2.1)
 rc-rest
 rdiscount
 rdoc
-RedCloth (4.1.9, 4.1.1) +ruby_186
+RedCloth (4.1.9, 4.1.1, 3.0.4) +ruby_186
 RedCloth  # latest version _should_ work on 191 and 186
 redgreen
 reek (1.1.3)
@@ -295,6 +299,7 @@ ruby_parser (2.0.3, 2.0.2)
 ruby-xslt +ruby_186
 rubyist-aasm
 rufus-scheduler (2.0.1)
+rugalytics
 runcoderun-configatron
 runcoderun-gem_sync
 ruport
@@ -302,6 +307,7 @@ sanitize (1.0.2)
 sanitize_email
 schacon-git
 sdoc
+searchlogic (1.6.6)
 selenium-client
 semanticart-is_paranoid
 session
@@ -320,6 +326,7 @@ spork
 sqlite3-ruby (1.2.4, 1.2.3, 1.2.1) +ruby_186 +ruby_191
 starling
 starling-starling
+state_machine (0.7.6)
 stemmer (1.0.1)
 stomp
 stone

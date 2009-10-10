@@ -303,6 +303,7 @@ sanitize (1.0.2)
 sanitize_email
 schacon-git
 sdoc
+sdoc-helpers
 selenium-client
 semanticart-is_paranoid
 session

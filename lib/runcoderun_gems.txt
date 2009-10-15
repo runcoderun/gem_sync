@@ -32,6 +32,7 @@ binarylogic-authlogic
 binarylogic-searchlogic
 bitly (0.3.1)
 bj
+bluecloth
 bmabey-email_spec
 botanicus-path
 builder (2.1.2)
@@ -220,6 +221,7 @@ opscode-ohai
 opscode-mixlib-cli (1.0.4)
 opscode-mixlib-config (1.0.9)
 opscode-mixlib-log (1.0.3)
+paginator
 patron
 orderedhash (0.0.6, 0.0.4)
 otherinbox-classifier (1.3.1.1)
@@ -242,6 +244,7 @@ PriorityQueue
 quietbacktrace
 rack (1.0.0, 0.9.1, 0.4.0)
 rack-test (0.2.0, 0.1.0)
+radius
 rand (0.9.1)
 rails (2.3.4, 2.3.3, 2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
 rake (0.8.7, 0.8.4, 0.8.3)

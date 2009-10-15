@@ -52,7 +52,7 @@ couchrest
 crack
 crypt (1.1.4)
 csv-mapper (0.0.3)
-cucumber (0.3.96, 0.3.94, 0.3.92, 0.3.9, 0.3.0, 0.2.3)
+cucumber (0.4.2, 0.3.104, 0.3.101, 0.3.96, 0.3.94, 0.3.92, 0.3.9, 0.3.0, 0.2.3)
 curb +ruby_186 +ruby_191
 daemons
 dancroak-clearance
@@ -76,6 +76,7 @@ dnsruby (1.26, 1.24, 1.2)
 do_mysql +ruby_186 +ruby_191
 echoe
 editalign
+entp-multipass
 erubis
 eventmachine
 expectations
@@ -115,7 +116,7 @@ grancher
 graticule
 graysky-translator (1.0.0)
 grempe-amazon-ec2
-haml (2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
+haml (2.2.8, 2.2.6, 2.2.4, 2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
 happymapper
 hashtostruct
 heckle (1.4.2, 1.4.1)
@@ -167,6 +168,7 @@ markaby
 maruku
 mash
 mbleigh-acts-as-taggable-on
+mbleigh-subdomain-fu 
 mdoel-cukesteps
 mechanize
 memcache-client
@@ -271,6 +273,7 @@ remarkable
 remarkable_activerecord
 remarkable_rails
 rest-client (0.9.2, 0.7)
+rgrove-sanitize
 right_aws (1.10.0, 1.9.0)
 right_http_connection (1.2.4)
 rio

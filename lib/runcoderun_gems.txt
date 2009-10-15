@@ -183,6 +183,7 @@ metaid (1.0)
 mhennemeyer-output_catcher
 mholling-active_url
 micronaut
+micronaut-rails
 mime-types (1.16, 1.15)
 mislav-hanna
 mislav-will_paginate (2.3.11, 2.3.4)

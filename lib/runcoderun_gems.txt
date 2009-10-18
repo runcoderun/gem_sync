@@ -6,6 +6,7 @@ actionmailer (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 1.3.6)
 actionpack (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 1.13.6)
 actionwebservice (1.2.6)
 activerecord (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.15.6)
+activerecord-jdbcmysql-adapter +jruby
 activeresource (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1)
 activesupport (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
 activemerchant
@@ -273,6 +274,7 @@ right_aws (1.10.0, 1.9.0)
 right_http_connection (1.2.4)
 rio
 rmagick (2.10.0, 2.9.1, 2.6.0) +ruby_186 +ruby_191
+rmagick4j +jruby
 rmail (1.0.0)
 roman-merb_cucumber
 roo

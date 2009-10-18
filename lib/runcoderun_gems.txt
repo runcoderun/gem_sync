@@ -150,6 +150,7 @@ jruby-openssl +jruby
 jruby-rcov +jruby
 jscruggs-metric_fu
 json (1.1.4, 1.1.3) +ruby_186 +ruby_191
+json_pure
 jsonbuilder
 juggernaut
 justinfrench-formtastic

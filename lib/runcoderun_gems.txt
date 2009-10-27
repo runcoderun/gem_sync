@@ -261,6 +261,7 @@ rake-compiler
 railroad
 rbtree (0.2.1)
 rc-rest
+rcov
 rdiscount
 rdoc
 RedCloth (4.1.9, 4.1.1, 3.0.4) +ruby_186

@@ -63,7 +63,7 @@ dancroak-clearance-admin
 dancroak-ruby-summize
 dancroak-twitter-search
 dancroak-validates_email_format_of
-database_cleaner (0.2.2)
+database_cleaner
 data_fabric (1.2.5)
 data_objects (0.9.12, 0.9.6)
 dbd-mysql +ruby_186 +ruby_191
@@ -243,6 +243,7 @@ pauldix-sax-machine
 pdf-reader (0.7.5)
 pdf-writer (1.1.8)
 peterwald-git (1.1.4)
+pg +ruby_186
 picnic (0.8.0, 0.7.1, 0.6.4)
 plist
 polyglot (0.2.6, 0.2.5, 0.2.3)

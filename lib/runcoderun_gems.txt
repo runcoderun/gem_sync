@@ -7,6 +7,7 @@ actionpack (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 1.13.6)
 actionwebservice (1.2.6)
 activerecord (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.15.6)
 activerecord-jdbcmysql-adapter +jruby
+activerecord-tableless
 activeresource (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1)
 activesupport (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
 activemerchant
@@ -22,6 +23,7 @@ archive-tar-minitar
 ar-extensions
 arrayfields (4.7.3, 4.6.0)
 authlogic
+authlogic-oid
 aws-s3
 bacon
 bcrypt-ruby (2.0.5, 2.0.3) +ruby_186
@@ -247,6 +249,7 @@ peterwald-git (1.1.4)
 pg +ruby_186
 picnic (0.8.0, 0.7.1, 0.6.4)
 plist
+pluginaweek-state_machine
 polyglot (0.2.6, 0.2.5, 0.2.3)
 postgres +ruby_186
 populator
@@ -298,6 +301,7 @@ rscribd
 rspec (1.2.7, 1.2.6, 1.2.4, 1.1.8, 1.1.4, 1.0.0)
 rspec-rails (1.2.7.1, 1.2.6, 1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rspec_hpricot_matchers
+rsl-stringex
 rubaidh-google_analytics
 rubigen
 ruby-aaws +ruby_191  # ruby 187 and above only

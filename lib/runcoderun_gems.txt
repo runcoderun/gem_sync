@@ -89,6 +89,7 @@ ezamar
 ezcrypto (0.7)
 facets (2.5.2, 2.5.0, 2.4.5, 2.4.4, 2.4.1, 2.3.0, 2.2.1, 2.2.0, 2.1.3, 2.0.5)
 facon
+factory_girl
 faker
 fakeweb
 fastercsv (1.4.0, 1.2.3)
@@ -331,6 +332,7 @@ session
 sexp_processor (3.0.1)
 sevenwire-forgery
 Shoulda (1.2.0, 1.1.1)
+shoulda
 shuber-attr_encrypted (1.0.8)
 shuber-eigenclass (1.0.1)
 shuber-encryptor (1.0.1)

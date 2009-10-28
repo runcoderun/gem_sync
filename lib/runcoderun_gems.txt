@@ -110,6 +110,7 @@ flexmock
 flog (2.1.0, 2.0.0, 1.1.0)
 freelancing-god-ginger
 freelancing-god-thinking-sphinx
+garb (0.2.6)
 geminstaller
 gem_plugin
 geokit

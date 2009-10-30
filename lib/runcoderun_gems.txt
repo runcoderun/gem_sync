@@ -48,6 +48,7 @@ carlosbrando-remarkable
 cgi_multipart_eof_fix (2.5.0)
 chrisk-fakeweb
 chronic
+cmdparse
 coderay
 compass
 configatron (2.2.2, 2.1.5)
@@ -139,6 +140,7 @@ ianwhite-garlic
 ianwhite-pickle (0.1.15)
 icalendar (1.1.0, 1.0.2)
 image_science +ruby_186 +ruby_191
+inherited_resources
 innate
 internuity-quick_scopes
 javan-whenever

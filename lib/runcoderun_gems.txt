@@ -35,6 +35,7 @@ binarylogic-authlogic
 binarylogic-searchlogic
 bitly (0.3.1)
 bj
+block_helpers
 bluecloth
 bmabey-email_spec
 botanicus-path
@@ -58,7 +59,7 @@ couchrest
 crack
 crypt (1.1.4)
 csv-mapper (0.0.3)
-cucumber (0.4.2, 0.3.104, 0.3.96, 0.3.94, 0.3.92, 0.3.9)
+cucumber (0.4.3, 0.4.2, 0.3.104, 0.3.96, 0.3.94, 0.3.92, 0.3.9)
 curb +ruby_186 +ruby_191
 daemons
 dancroak-clearance
@@ -250,6 +251,7 @@ pdf-writer (1.1.8)
 peterwald-git (1.1.4)
 pg +ruby_186
 picnic (0.8.0, 0.7.1, 0.6.4)
+pickle (0.1.21)
 plist
 pluginaweek-state_machine
 polyglot (0.2.6, 0.2.5, 0.2.3)

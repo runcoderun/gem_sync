@@ -17,9 +17,10 @@ rescue LoadError
 end
 
 begin
-
   require 'micronaut/rake_task'
-  Micronaut::RakeTask.new(:examples)
+  Micronaut::RakeTask.new(:examples) do |t|
+    t.ruby_opts << '-Ilib -Iexamples'
+  end
   namespace :examples do  
   
     desc "Run all micronaut examples using rcov"

@@ -88,6 +88,7 @@ erubis
 eventmachine
 expectations
 extensions
+exemplor
 extlib (0.9.12, 0.9.5)
 ezamar
 ezcrypto (0.7)

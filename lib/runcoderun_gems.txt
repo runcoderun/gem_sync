@@ -25,6 +25,7 @@ arrayfields (4.7.3, 4.6.0)
 authlogic
 authlogic-oid
 aws-s3
+adyen (0.2.1)
 bacon
 bcrypt-ruby (2.0.5, 2.0.3) +ruby_186
 beanstalk-client
@@ -114,7 +115,7 @@ flexmock
 flog (2.1.0, 2.0.0, 1.1.0)
 freelancing-god-ginger
 freelancing-god-thinking-sphinx
-garb (0.2.6)
+garb (0.3.1, 0.2.6)
 geminstaller
 gem_plugin
 geokit
@@ -128,7 +129,7 @@ graticule
 graysky-translator (1.0.0)
 grempe-amazon-ec2
 grid-coordinates
-haml (2.2.8, 2.2.6, 2.2.4, 2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
+haml (2.2.12, 2.2.8, 2.2.6, 2.2.4, 2.2.1, 2.0.9, 2.0.7, 2.0.2, 2.0.1)
 happymapper
 hashtostruct
 heckle (1.4.2, 1.4.1)

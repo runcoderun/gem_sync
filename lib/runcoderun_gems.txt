@@ -51,6 +51,7 @@ chrisk-fakeweb
 chronic
 cmdparse
 coderay
+collectiveidea-delayed_job
 compass
 configatron (2.2.2, 2.1.5)
 configuration

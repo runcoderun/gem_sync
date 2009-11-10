@@ -118,6 +118,7 @@ formtastic
 freelancing-god-ginger
 freelancing-god-thinking-sphinx
 garb (0.3.1, 0.2.6)
+gash
 geminstaller
 gem_plugin
 geokit

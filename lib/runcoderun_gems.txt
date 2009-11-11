@@ -368,6 +368,8 @@ stemmer (1.0.1)
 stomp
 stone
 subdomain-fu
+sunspot
+sunspot_rails
 syntax
 systemu (1.2.0)
 system_timer +ruby_186 +ruby_191
@@ -405,6 +407,7 @@ validatable
 vlad
 watchr (0.5.7)
 webrat (0.5.3, 0.4.4)
+websolr-rails
 whenever
 will_paginate
 xmlelements

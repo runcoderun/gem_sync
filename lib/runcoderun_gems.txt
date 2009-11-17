@@ -355,6 +355,7 @@ semanticart-is_paranoid
 session
 sexp_processor (3.0.1)
 sevenwire-forgery
+shotgun
 Shoulda (1.2.0, 1.1.1)
 shoulda
 shuber-attr_encrypted (1.0.8)
@@ -362,6 +363,8 @@ shuber-eigenclass (1.0.1)
 shuber-encryptor (1.0.1)
 simple-rss (1.1)
 sinatra
+sinatra-content-for
+smusher
 soap4r (1.5.8)
 spicycode-micronaut
 spicycode-micronaut-rails
@@ -425,4 +428,5 @@ yakischloba-em-mailer (0.0.2)
 yard
 yaroslav-russian
 ym4r
+yui-compressor
 ZenTest (4.0.0, 3.11.1, 3.10.0)

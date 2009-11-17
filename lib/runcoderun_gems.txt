@@ -260,6 +260,7 @@ pauldix-feedzirra
 pauldix-sax-machine
 pdf-reader (0.7.5)
 pdf-writer (1.1.8)
+permanent_records
 peterwald-git (1.1.4)
 pg +ruby_186
 picnic (0.8.0, 0.7.1, 0.6.4)

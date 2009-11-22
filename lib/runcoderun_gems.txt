@@ -16,6 +16,7 @@ acts_as_reportable
 addressable (2.0.2, 1.0.4)
 airblade-paper_trail
 allison
+amqp
 andand
 andre-geokit
 annotate-models
@@ -87,6 +88,7 @@ dm-tags (0.9.11)
 dm-validations (0.9.11)
 dnsruby (1.26, 1.24, 1.2)
 do_mysql +ruby_186 +ruby_191
+do_postgres (0.9.11)
 echoe
 editalign
 entp-multipass
@@ -195,6 +197,7 @@ manveru-mailit (2009.06.08)
 markaby
 maruku
 mash
+matthuhiggins-foreigner
 mbleigh-acts-as-taggable-on
 mbleigh-subdomain-fu
 mdoel-cukesteps

@@ -50,6 +50,7 @@ camping (1.5)
 capistrano
 capistrano-ext
 carlosbrando-remarkable
+carrierwave
 cgi_multipart_eof_fix (2.5.0)
 chrisk-fakeweb
 chronic

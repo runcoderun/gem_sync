@@ -106,6 +106,7 @@ facon
 factory_girl
 faker
 fakeweb
+fakeweb-matcher
 fastercsv (1.4.0, 1.2.3)
 fastthread (1.0.7, 1.0.1) +ruby_186
 fast_xs (0.7)

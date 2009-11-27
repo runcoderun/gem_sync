@@ -245,7 +245,7 @@ nagoro
 notahat-machinist  
 net-ssh (2.0.11, 2.0.4)
 newgem
-newrelic_rpm
+newrelic_rpm (2.9.8)
 netguru-aasm
 netguru-hominid 
 nex3-ruby-progressbar
@@ -297,6 +297,7 @@ rcov
 rdiscount
 rdoc
 readable_random
+recaptcha
 RedCloth (4.1.9, 4.1.1, 3.0.4) +ruby_186
 RedCloth  # latest version _should_ work on 191 and 186
 redgreen
@@ -330,8 +331,8 @@ roodi (1.4.0)
 rgrove-sanitize
 rr
 rscribd
-rspec (1.2.7, 1.2.6, 1.2.4, 1.1.8, 1.1.4, 1.0.0)
-rspec-rails (1.2.7.1, 1.2.6, 1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
+rspec (1.2.9, 1.2.7, 1.2.6, 1.2.4, 1.1.8, 1.1.4, 1.0.0)
+rspec-rails (1.2.9, 1.2.7.1, 1.2.6, 1.2.4, 1.2.2, 1.2.0, 1.1.12, 1.1.11)
 rspec_hpricot_matchers
 rsl-stringex
 rubaidh-google_analytics

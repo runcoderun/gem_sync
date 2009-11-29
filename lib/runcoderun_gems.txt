@@ -358,6 +358,7 @@ rugalytics
 runcoderun-configatron
 runcoderun-gem_sync
 ruport
+rvideo
 sanitize (1.0.2)
 sanitize_email
 schacon-git

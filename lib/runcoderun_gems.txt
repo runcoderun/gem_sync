@@ -12,6 +12,7 @@ activerecord-tableless
 activeresource (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.0, 2.0.2, 2.0.1)
 activesupport (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
 activemerchant
+acts_as_list
 acts_as_reportable
 addressable (2.0.2, 1.0.4)
 airblade-paper_trail
@@ -27,6 +28,7 @@ arrayfields (4.7.3, 4.6.0)
 attribute_mapper
 authlogic
 authlogic-oid
+auto_html
 aws-s3
 adyen (0.2.1)
 bacon
@@ -59,6 +61,7 @@ cmdparse
 coderay
 collectiveidea-delayed_job
 compass
+completeness-fu
 configatron (2.2.2, 2.1.5)
 configuration
 context
@@ -173,6 +176,7 @@ jeremymcanally-stump
 jferris-mocha (0.9.5.0.1241126838)
 jnunemaker-twitter
 josevalim-rails-footnotes
+jrails
 jruby-openssl +jruby
 jruby-rcov +jruby
 jscruggs-metric_fu
@@ -241,6 +245,7 @@ mperham-memcache-client (1.7.2)
 mwmitchell-rsolr
 mwmitchell-material_girl
 multipart-post (1.0)
+multipass
 mustache
 mysql +ruby_186 +ruby_191
 nagoro
@@ -320,6 +325,7 @@ resque
 rest-client (0.9.2, 0.7)
 rforce
 rgl
+rgrove-sanitize
 right_aws (1.10.0, 1.9.0)
 right_http_connection (1.2.4)
 rio
@@ -330,7 +336,7 @@ rmail (1.0.0)
 roman-merb_cucumber
 roo
 roodi (1.4.0)
-rgrove-sanitize
+routing-filter
 rr
 rscribd
 rspec (1.2.9, 1.2.7, 1.2.6, 1.2.4, 1.1.8, 1.1.4, 1.0.0)

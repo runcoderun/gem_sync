@@ -164,6 +164,7 @@ inherited_resources
 innate
 internuity-quick_scopes
 is_taggable
+jammit
 javan-whenever
 jeremymcanally-context
 jeremymcanally-matchy

@@ -173,8 +173,11 @@ jeremymcanally-context
 jeremymcanally-matchy
 jeremymcanally-pending
 jeremymcanally-stump
+jeweler
 jferris-mocha (0.9.5.0.1241126838)
+jnunemaker-matchy
 jnunemaker-twitter
+jnunemaker-validatable
 josevalim-rails-footnotes
 jrails
 jruby-openssl +jruby
@@ -237,8 +240,10 @@ mojombo-grit (1.1.1, 0.9.4)
 mojombo-jekyll
 moneta
 money
+mongo (0.17.1)
 mongomapper
 mongo_mapper
+mongo_ext
 mongrel
 mosquito (0.1.4, 0.1.3)
 mperham-memcache-client (1.7.2)

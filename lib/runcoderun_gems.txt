@@ -202,6 +202,7 @@ log4r
 logging (0.9.4)
 log_buddy
 machinist
+mad_mimi_mailer
 main (2.8.3, 2.8.2)
 manveru-mailit (2009.06.08)
 markaby

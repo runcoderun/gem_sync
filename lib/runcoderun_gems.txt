@@ -279,6 +279,7 @@ orderedhash (0.0.6, 0.0.4)
 otherinbox-classifier (1.3.1.1)
 packet (0.1.15, 0.1.14)
 paperclip
+parallel
 ParseTree (3.0.3, 2.2.0)
 patientslikeme-campaign_monitor
 pauldix-feedzirra

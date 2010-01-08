@@ -299,7 +299,7 @@ populator
 prawn
 PriorityQueue
 quietbacktrace
-rack (1.0.0, 0.9.1, 0.4.0)
+rack (1.0.1, 1.0.0, 0.9.1, 0.4.0)
 rack-test (0.2.0, 0.1.0)
 radius
 rand (0.9.1)

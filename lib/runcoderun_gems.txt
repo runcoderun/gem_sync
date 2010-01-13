@@ -14,6 +14,7 @@ activesupport (2.3.4, 2.3.2, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 1.4.4)
 activemerchant
 acts_as_list
 acts_as_reportable
+acts_as_taggable_on_steroids
 addressable (2.0.2, 1.0.4)
 airblade-paper_trail
 allison
@@ -78,6 +79,7 @@ dancroak-clearance-admin
 dancroak-ruby-summize
 dancroak-twitter-search
 dancroak-validates_email_format_of
+darkhelmet-sinatra_more
 database_cleaner
 data_fabric (1.2.5)
 data_objects (0.9.12, 0.9.6)
@@ -99,6 +101,7 @@ entp-multipass
 erubis
 escape
 eventmachine
+every
 expectations
 exceptional
 extensions
@@ -138,6 +141,8 @@ geminstaller
 gemtronics
 gem_plugin
 geokit
+geoip
+geonames
 george-sanitize_email
 giraffesoft-resource_controller
 git
@@ -206,6 +211,7 @@ log4r
 logging (0.9.4)
 log_buddy
 machinist
+machinist_mongomapper
 mad_mimi_mailer
 main (2.8.3, 2.8.2)
 manveru-mailit (2009.06.08)
@@ -229,6 +235,7 @@ merb-mailer (0.9.9)
 merb-manage (0.4)
 merb-more (0.9.9)
 metaid (1.0)
+metric_fu
 mhennemeyer-output_catcher
 mholling-active_url
 micronaut
@@ -259,6 +266,7 @@ multipass
 mustache
 mysql +ruby_186 +ruby_191
 nagoro
+nanotest
 notahat-machinist  
 net-ssh (2.0.11, 2.0.4)
 newgem
@@ -275,6 +283,7 @@ opscode-ohai
 opscode-mixlib-cli (1.0.4)
 opscode-mixlib-config (1.0.9)
 opscode-mixlib-log (1.0.3)
+packr
 paginator
 patron
 orderedhash (0.0.6, 0.0.4)
@@ -307,6 +316,7 @@ radius
 rand (0.9.1)
 rails (2.3.5, 2.3.4, 2.3.3, 2.3.2, 2.3.1, 2.2.2, 2.1.2, 2.1.1, 2.1.0, 2.0.5, 2.0.4, 2.0.2, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0)
 railsdog-less
+rainpress
 rake (0.8.7, 0.8.4, 0.8.3)
 rake-compiler
 railroad
@@ -335,6 +345,7 @@ remarkable_activerecord (3.1.11)
 remarkable_rails (3.1.11)
 resque
 rest-client (0.9.2, 0.7)
+rev
 rforce
 rgl
 rgrove-sanitize
@@ -410,6 +421,7 @@ state_machine (0.7.6)
 stemmer (1.0.1)
 stomp
 stone
+stringex
 subdomain-fu
 sunspot
 sunspot_rails
@@ -421,11 +433,13 @@ taf2-curb
 tagz
 technicalpickles-jeweler
 term-ansicolor
+term_extraction
 terminator (0.4.2)
 termios +ruby_186 # 0.9.4 gem does not build against 1.9.1 -- looks like it needs to be built from source
 test-spec
 test-unit (1.2.3) +ruby_191
 text-format
+texticle
 thin
 thinking-sphinx
 thoughtbot-clearance
@@ -458,6 +472,7 @@ whenever
 will_paginate
 xmlelements
 xml-simple
+ya2yaml
 yajl-ruby (0.6.4)
 yakischloba-em-mailer (0.0.2)
 yard

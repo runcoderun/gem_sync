@@ -144,6 +144,10 @@ geokit
 geoip
 geonames
 george-sanitize_email
+gettext
+gettext_activerecord
+gettext_json
+gettext_rails
 giraffesoft-resource_controller
 git
 god
@@ -206,6 +210,7 @@ libxml-ruby +ruby_186 +ruby_191
 Linguistics
 liquid
 locale
+locale_rails
 lockfile (1.4.3)
 log4r
 logging (0.9.4)

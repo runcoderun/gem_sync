@@ -19,6 +19,7 @@ addressable (2.0.2, 1.0.4)
 airblade-paper_trail
 allison
 amqp
+ambethia-smtp-tls
 andand
 andre-geokit
 annotate-models

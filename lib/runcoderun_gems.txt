@@ -16,6 +16,7 @@ acts_as_list
 acts_as_reportable
 acts_as_taggable_on_steroids
 addressable (2.0.2, 1.0.4)
+advisable
 airblade-paper_trail
 allison
 amqp

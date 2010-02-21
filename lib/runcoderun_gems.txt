@@ -50,6 +50,7 @@ bmabey-email_spec
 botanicus-path
 builder (2.1.2)
 bundler
+bundler08
 calendar_date_select
 camping (1.5)
 capistrano
